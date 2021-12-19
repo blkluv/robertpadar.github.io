@@ -33,6 +33,11 @@
                 top:0;
                 width:100%
             }
+            input {
+                position:fixed!important;
+                width: 100px;
+                float: left;
+            }
             #leftPanel {
                 text-align: center;
                 align-self: auto;
@@ -127,26 +132,24 @@
                 padding-right: 40px;
                 margin: 0px!important;
                 padding: 0px 10px;
+                align-items: center;
                 justify-content: flex-end
             }
             .row > .column {
                 text-align: right;
                 padding: 0 8px;
             }
-
             .row:after {
                 content: "";
                 display: table;
                 clear: both;
             }
-
             .column {
                 text-align: right;
                 display: block;
                 float: right;
                 width: 25%;
             }
-
             /* The Modal (background) */
             .modal {
                 display: none;
@@ -160,7 +163,6 @@
                 overflow: auto;
                 background-color: black;
             }
-
             /* Modal Content */
             .modal-content {
                 position: relative;
@@ -180,22 +182,18 @@
                 font-size: 35px;
                 font-weight: bold;
             }
-
             .close:hover,
             .close:focus {
                 color: #999;
                 text-decoration: none;
                 cursor: pointer;
             }
-
             .mySlides {
                 display: none;
             }
-
             .cursor {
                 cursor: pointer;
             }
-
             /* Next & previous buttons */
             .prev,
             .next {
@@ -213,19 +211,16 @@
                 user-select: none;
                 -webkit-user-select: none;
             }
-
             /* Position the "next button" to the right */
             .next {
                 right: 0;
                 border-radius: 3px 0 0 3px;
             }
-
             /* On hover, add a black background color with a little bit see-through */
             .prev:hover,
             .next:hover {
                 background-color: rgba(0, 0, 0, 0.8);
             }
-
             /* Number text (1/3 etc) */
             .numbertext {
                 color: #f2f2f2;
@@ -234,37 +229,42 @@
                 position: absolute;
                 top: 0;
             }
-
             img {
                 margin-bottom: -4px;
             }
-
             .caption-container {
                 text-align: center;
                 background-color: black;
                 padding: 2px 16px;
                 color: white;
             }
-
             .demo {
                 opacity: 0.6;
             }
-
             .active,
             .demo:hover {
                 opacity: 1;
             }
-
             img.hover-shadow {
                 transition: 0.3s;
             }
-
             .hover-shadow:hover {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
-
             #footer_container {
                 padding-top: 150px;
+            }
+            #gamePlay {
+                display: flex;
+                padding-top: 150px!important;
+                margin: 0px!important;
+                padding: 0px 10px;
+                justify-content: flex-end;
+                padding-right: 200px;
+            }
+            #blackJack, #roulette {
+                padding: 0px;
+                border: 0px;
             }
         </style>
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -297,7 +297,8 @@
         <script type='text/javascript' src='./js/bootstrap.js'></script>
         <script type="text/javascript" src="./js/bootstrap.min.js"></script>
         <script type='text/javascript' src='./js/bootstrap.bundle.js'></script>
-        <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>      
+        <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+        <script type='text/javascript' src='./js/script.js'></script>
         <script>
             !function() {
                 function t() {
@@ -473,16 +474,31 @@
             </div>
             <div class="row">
                 <div class="column">
-                  <img src="./img/roulette_wheel.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    <button id="roulette" onclick="myRoulette()"><img src="./img/roulette_wheel.jpg" class="hover-shadow cursor"></button>
                 </div>
                 <div class="column">
-                  <img src="./img/fortune_wheel.gif" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  <img src="./img/fortune_wheel.gif" style="width:100%" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                  <a href="./blackjack/index.html"><img src="./img/royal_flush.jpg" style="width:100%" class="hover-shadow cursor"></a>
+                    <button id="blackJack" onclick="myBlackjack()"><img src="./img/royal_flush.jpg" class="hover-shadow cursor"></button>
                 </div>
             </div>
+            <div id="gamePlay">
+                <div id="playField" frameborder="0"></div>
+            </div>
         </div>
+
+        <script src="./blackjack/js/create.js"></script>
+        <script src="./blackjack/js/conf.js"></script>
+        <script src="./blackjack/js/card.js"></script>
+        <script src="./blackjack/js/button.js"></script>
+        <script src="./blackjack/js/game.js"></script>
+        <script src="./blackjack/js/CreateJSTextInput.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!--<script type="text/javascript" src="./roulette/js/createjs-2015.11.26.min.js"></script>
+        <script type="text/javascript" src="./roulette/js/howler.min.js"></script>
+        <script type="text/javascript" src="./roulette/js/main.js"></script>-->
     </body>
     <footer>
         <div id="footer_container">
@@ -524,7 +540,7 @@
             <div id="main-menu" class="container">
                 <div class="nav-cont">
                     <a href="https://robertpadar.github.io/">
-                        <h3 class="footer-menu-title"> Casino Midas </h3>
+                        <h3 class="footer-menu-title"> Casino Casino </h3>
                     </a>
                     <nav id="main-navigation" class="site-navigation" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                         <div class="main-nav">
@@ -632,9 +648,6 @@
                 <a class="term_icon" id="cds" href="" target="_blank">
                     <img src="./img/cds.png" alt="">
                 </a>
-            </div>
-            <div id="copyright">
-                <p class="geo_hide">Casino is managed by Luckland Group B.V. and operated under Master Gaming License #1668/JAZ issued by the General Governor of Curacao to Luckland group B.V registered in Gebouw, Curacao.</p>
             </div>
         </div>
     </footer>
