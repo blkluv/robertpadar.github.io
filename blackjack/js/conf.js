@@ -1,6 +1,6 @@
 const imgs = {
 	cards: {
-		path: 'assets/PNG/Cards/',
+		path: './blackjack/assets/PNG/Cards/',
 		ext: 'png',
 		back: {
 			blue: 'cardBack_blue5',
@@ -11,7 +11,7 @@ const imgs = {
 		},
 	},
 	chips: {
-		path: 'assets/PNG/Chips/',
+		path: './blackjack/assets/PNG/Chips/',
 		ext: 'png',
 		black: {
 			main: 'chipBlackWhite',
