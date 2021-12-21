@@ -246,7 +246,7 @@ span.mainBannerArrow.right:hover {
         text-align: center;
     }
     #header_section {
-        height: 0vw!important;
+        height: 6vw!important;
     }
     .slide .slide_inner {
         width: 90%;
@@ -410,7 +410,7 @@ span.mainBannerArrow.right:hover {
     }
 }
 
-@media only screen and (max-width: 1226px) and (min-width:1026px) {
+@media only screen and (max-width: 1226px) {
     body {
         padding-top: 0px!important;
     }
@@ -426,6 +426,7 @@ span.mainBannerArrow.right:hover {
     #header_section {
         background-color: rgb(0, 0, 0);
         position: relative;
+        padding-bottom: 30px;
     }
     #header_section #secondary-header {
         display: none;
@@ -433,12 +434,18 @@ span.mainBannerArrow.right:hover {
     #header_section a {
         float: left;
         color: white;
-        padding: 14px 16px;
+        padding: 10px 12px;
         text-decoration: none;
         font-size: 17px;
+        display: block;
     }
     #header_section a.ico {
         float: right!important;
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     #header_section a:hover {
         background-color: #ddd;
@@ -482,42 +489,5 @@ span.mainBannerArrow.right:hover {
 @media only screen and (max-width: 470px) and (min-width: 300px) {
     #banner_container {
         height: 125px;
-    }
-}
-@media only screen and (max-width: 1026px) {
-    #secondary-header {
-        overflow: hidden;
-        background-color: rgb(0, 0, 0);
-        position: relative;
-    }
-      
-    #secondary-header #menu-links {
-        display: none;
-    }
-      
-    #secondary-header li a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-      
-    #secondary-header a.ico {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-      
-    #secondary-header a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-      
-    .active {
-        background-color: #04AA6D;
-        color: white;
     }
 }
