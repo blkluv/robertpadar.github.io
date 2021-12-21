@@ -10,7 +10,7 @@ License: GNU General Public License
 License URI: license.txt
 */
 
-@import url("../base-theme/css/style.css");
+@import url("./style.css");
 
 /*************** ADD YOUR CUSTOM CSS BELOW  ***************/
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap');
