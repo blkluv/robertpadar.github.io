@@ -434,7 +434,6 @@ span.mainBannerArrow.right:hover {
     #header_section {
         background-color: rgb(0, 0, 0);
         position: relative;
-        display:inline-table;
     }
     #header_section #secondary-header {
         display: none;
