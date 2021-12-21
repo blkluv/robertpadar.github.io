@@ -1,0 +1,2235 @@
+/*
+Theme Name: Midas Child Theme
+Theme URI: http://10.13.11.19/wp-portals/base-theme
+Description: Base Midas Child Theme
+Template: base-theme
+Version: 1.1.3
+Author: Infinity Online
+Author URI: https://infinityltdonline.com/
+License: GNU General Public License
+License URI: license.txt
+*/
+
+@import url("../base-theme/css/style.css");
+
+/*************** ADD YOUR CUSTOM CSS BELOW  ***************/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap');
+
+body.page-lobby .button.blue:hover{
+    color: #ffffff;
+}
+
+body .nav-cont .footer-menu-title{
+    color:#fff !important;
+}
+
+.nl .geo_hide{
+    display:none !important;
+}
+
+.www #footer_container #main-menu .nav-cont:nth-last-child(-n+3), .eu #footer_container #main-menu .nav-cont:nth-last-child(-n+3){
+    display: block !important;
+}
+
+#footer_container .menu li{
+    float: left !important;
+    display: inline-block !important;
+    margin-bottom:0px !important;
+}
+
+.www #footer_container .menu li, .eu #footer_container .menu li{
+    float:none !important;
+    display: block !important;
+}
+
+#footer_container .menu a{
+    line-height: 2 !important;
+    font-size: 0.95vw;
+}
+
+#footer_container .menu a:hover{
+    color:#e9c966;
+}
+
+.site-navigation ul{
+    list-style-type: none !important;
+}
+
+#main-menu{
+    align-items: flex-start;
+    display:flex;
+    justify-content: center !important;
+}
+
+.nav-cont{
+    margin:0px 25px;
+}
+body {
+    background-color: #000000 !important;
+	overflow-x: hidden;
+}
+body.iframe {
+    background-color: #000000 !important;
+}
+* {
+   font-family: 'Josefin Sans', sans-serif;
+}
+#lw_info h3, .custom_title, .custom_title span, .button, #all_games_button, .inner_container .inner_title_purple h2, 
+.inner_container .inner_title_blue h2, .inner_container .inner_title_purple h2 strong, .inner_container .inner_title_blue h2 strong,
+.play_now, .more_info, .slide_inner h3, .slide_inner h2, .slide_button {
+   font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+.login-head a.login-btn:focus {
+    color: #ffffff !important;
+}
+a.button.blue:focus, a.button.blue:hover {
+    color: black !important;
+}
+.table_container td {
+	text-align:left;
+}
+
+.vip-table .table_heading p {
+	padding-left: 8px;
+	text-align:left !important;
+}
+body.landing-page {
+    background: #fff url('/wp-content/uploads/sites/5/2018/01/background-bottom-1.png')center bottom no-repeat;
+}
+.button {
+    color: #ffffff;
+}
+
+/*Banner Button animations START*/
+
+
+/*Banner Spark animation START*/
+
+.sparkley{
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-weight: normal;
+  border-radius: 3px;
+  transition: all 0.25s ease;
+  z-index:10000;
+  position:relative;
+}
+.sparkley:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.2);
+  z-index:10000;
+  position:relative;
+}
+
+/*Banner Spark animation END*/
+
+
+
+
+.signup-btn:hover {
+	color: #c37c13;
+	background: linear-gradient(-45deg, #c37c13, #ffe79b, #c37c13) !important;
+	background-size: 220% 100% !important;
+	-webkit-animation: Gradient 2s ease infinite;
+	-moz-animation: Gradient 2s ease infinite;
+	animation: Gradient 2s ease infinite;
+}
+
+.login-btn:hover {
+	color: #c37c13;
+	background: linear-gradient(-45deg, #ffffff, #ffffff, #a9a8a8) !important;
+	background-size: 220% 100% !important;
+	-webkit-animation: Gradient 2s ease infinite;
+	-moz-animation: Gradient 2s ease infinite;
+	animation: Gradient 2s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+/*Banner Button animations END*/
+
+
+.vc_row.wpb_row.vc_row-fluid.vip_container {
+background-size:100% 100% !important;
+}
+
+.button.blue {
+    background-color: #e9c966;
+    color: black
+}
+.button.yellow {
+    background-color: #e9c966;
+    color: #3f4043;
+}
+
+.chat_parrot img {
+    width: 100px !important;
+    margin-right: 35px;
+	}
+	
+.fullSize {
+	width:100% !important;
+}
+
+/* inner */
+.inner_container .inner_text p, .inner_container .inner_text li, .inner_container .inner_text h4  {
+    color: #ffffff;
+    font-size: 1.3vw;
+}
+.inner_text a{
+		color:#fff !important;
+	}
+.inner_container .inner_title_blue {
+    color: #e9c966;
+}
+.inner_container .inner_title_purple {
+    color: #e9c966;
+}
+.inner_container .inner_title_yellow {
+    color: #e9c966;
+}
+.inner_container .inner_title_purple h2, .inner_container .inner_title_blue h2 {
+    font-size: 2vw;
+}
+/* inner end */
+
+/* contact */
+#contact_container {
+    background-image: url(../../uploads/2019/09/contact_desktop.jpg) !important;
+    background-size: 100% 100% !important;
+    padding-top: 10vw;
+    padding-bottom: 13vw;
+    padding-left: 24vw;
+}
+
+.page-contact-us .vc_col-sm-12{
+	width:65% !important;
+}
+
+.page-contact-us .row_container, .row_container.vc_row{
+	width:100%;
+}
+
+#contact_container p{
+	color:#000000 !important;
+}
+
+#content-full {
+	background: transparent;
+}
+
+#contact_container .custom_title {
+	text-align: left !important;
+	margin-top:0px;
+}
+
+#contact_container .custom_title span{
+	position:relative;
+	margin:0px auto;
+	left: 3vw;
+	color:#000000 !important;
+}
+
+#contact_container .inner_text {
+    display: inline-block;
+    width: 26vw;
+    text-align: left;
+}
+
+#contact_container img{
+	width:5%;
+	
+}
+#contact_container .vc_column-inner {
+    padding-top: 0px;
+}
+#contact_container .vc_column-inner p {
+    font-size: 1.1vw;
+    line-height: 1.2em;
+    margin-bottom: 0.5vw;
+}
+
+
+.page-vip .post-entry{
+	background: url("/wp-content/uploads/2021/06/VIP_desktop_bg.jpg");
+	background-position:center;
+	background-size:cover;
+	padding-bottom:500px;	
+}
+
+.vip_icons{
+	margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.table_container td{
+	border-top:none !important;
+	border-bottom:1px solid black !important;
+	color:#000000 !important;
+}
+
+.vip-table{
+	position: relative;
+    padding: 100px 12vw;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background: url(/wp-content/uploads/2021/06/scroll-vip.png);
+}
+
+.page-vip .inner_title_blue h2{
+	font-size: 55px;
+}
+
+.page-vip .post-entry {
+    padding-bottom: 100px !important;
+}
+
+.vip_inner_contaienr{
+	position:relative !important;
+	top:100px !important;
+	max-width: 1600px !important;
+}
+
+
+
+/* contact end */
+
+/* video */
+.casino_video .mejs-button > button, .casino_video .mejs-overlay-button {
+    background-image: url(../../plugins/casino-enhancement/assets/img/general/casinomidas/mejs-controls.svg);
+}
+
+.video_and_images .vc_column_container:not(:first-child) .vc_column-inner {
+    padding-top: 0px !important;
+}
+.casino_video .mejs-container .mejs-controls {
+    background-color: #ffffff;
+}
+.casino_video .mejs-controls span {
+    color: #3f4043;
+}
+.casino_video .mejs-button.mejs-playpause-button.mejs-play {
+    background-color: #a9a8a8;
+}
+.casino_video .mejs-controls .mejs-time-total.mejs-time-slider {
+    background-color: #e9c966;
+}
+.casino_video .mejs-controls .mejs-time-total.mejs-time-slider .mejs-time-handle-content {
+    background-color: #e9c966;
+    border: 3px solid #e9c966;
+}
+.casino_video .mejs-controls .mejs-time-total.mejs-time-slider .mejs-time-current {
+    background-color: #f8d66c;
+}
+.casino_video .mejs-controls .mejs-time-total.mejs-time-slider .mejs-time-loaded {
+    background-color: #e9c966;
+}
+.casino_video .mejs-volume-button > .mejs-volume-slider {
+
+}
+.casino_video .mejs-volume-button .mejs-volume-total {
+    background-color: #e9c966;
+}
+.casino_video .mejs-volume-button .mejs-volume-current {
+    background-color: #f8d66c;
+}
+body .video_and_images {
+    
+}
+/* video end */
+
+/* header */
+#site-branding #logo img {
+	margin-top: 10px;
+    width: 22vw;
+}
+#header_section {
+    background: black;
+    height: 4.5vw;
+}
+#menu-links .lang_bar #dropDownArrow {
+    border-color: #ffffff;
+}
+#menu-links .lang_bar #dropDownArrow.open {
+    border-color: #e9c966;
+}
+#menu-links .lang_bar:hover #dropDownArrow {
+    border-color: #e9c966;
+}
+#menu-links #lang_bar_inner {
+    background-color: #e9c966;
+}
+#menu-links #lang_bar_inner a:hover {
+    background-color: #f8d66c;
+}
+#menu-links a {
+    font-size: 1vw;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    color: #ffffff
+}
+
+#menu-links #lang_bar_inner a{
+	color:black !important;
+}
+#menu-links a:hover, #menu-links a:focus {
+    color: #e9c966;
+    border-color: #e9c966;
+}
+#secondary-header .login-head a {
+    font-size: 1vw;
+    border: 2px solid #ffffff;
+    color: black;
+	background:#ffffff;
+	padding-top: 0.6vw;
+}
+
+#latest_winners_contaienr #triangle {
+    position: absolute;
+    top: 0px;
+    right: -1.4vw;
+    width: 0px;
+    height: 0px;
+    border-top: 1.7vw solid transparent;
+    border-bottom: 1.7vw solid transparent;
+}
+
+#secondary-header .login-head a.login-btn:hover {
+    color: black;
+}
+#secondary-header .login-head a.signup-btn {
+    background-color: #e9c966;
+    border-color: #e9c966;
+    color: black;
+	padding-top: 0.6vw;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+/* header end */
+
+/* custom title */
+@media (min-width: 1026px) {
+    .custom_title {
+        font-size: 2.2vw;
+    }
+}
+.custom_title {
+    margin-bottom: 1vw;
+    text-align: center;
+}
+.custom_title span {
+    color: #e9c966;
+    font-weight: 700;
+    font-weight: 900;
+}
+.custom_title.yellow span {
+    color: #e9c966;
+}
+.custom_title.blue span{
+    color: #f8d66c;
+}
+.video_and_images .custom_title span {
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+    color: #ffffff;
+}
+/* custom title end */
+
+/* latest winners */
+#latest_winners_contaienr #lw_info {
+    background-color: #e9c966;
+}
+#latest_winners_contaienr #triangle {
+    border-left: 1.4vw solid #e9c966;
+}
+#latest_winners_contaienr #lw_slider {
+    background-color: #a9a8a8;
+}
+#lw_slider .scroller .winners-box-text-wrapper span {
+    color: #ffffff;
+}
+#lw_info h3 {
+    font-weight: 700;
+    font-size: 1.7vw;
+    line-height: 0.86em;
+    color: black;
+	margin-top:0.9vh;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/* latest winners end*/
+
+/* jackpot-ticker */
+#jackpots-ticker #left-side-cont .button {
+    color: #000000;
+    background: #e9c966;
+}
+
+#jackpots-ticker .jackpots-ticker-item h3 {
+    border: 2px solid #e9c966;
+    color:#e9c966;
+}
+/* jackpot-ticker end */
+@media (min-width: 1025px) {
+    body.iframe .chat_parrot{
+        display:none;
+    }
+	
+	.withdrawal-img{
+		margin: 0px 10px 0px 76px !important;
+	}
+
+	#menu-links .lang_bar a:first-child {
+        padding: 0.4vw 1.4vw !important;
+        padding-right: 1.4vw !important;
+    }
+
+    #lang_bar_inner a:first-child img{
+        width:25px !important;
+        filter: grayscale(100%);
+    }
+
+    #menu-links .lang_bar #dropDownArrow{
+        right:5px !important;
+    }
+
+
+    #lang_bar_inner img{
+        width:25px !important;
+    }
+
+    #currentLanguage img{
+        width:25px !important;
+    }
+        
+    #banner_container .slide{
+        background-size: 100% 100%;
+    }
+        
+    body .video_and_images {
+        background-size: 100% 100% !important;
+    }
+
+    #jackpots-ticker #left-side-cont .button {
+        padding-top: 0.8vw !important;
+    }
+}
+
+/* casino-icons */
+.casino_icon_inner .casino_icon {
+    background-color: #732793;
+}
+.casino_icons .casino_icon_inner h3 {
+    color: #3f4043;
+}
+/* casino-icons end */
+
+/* games */
+#games_listing_container #filter_container {
+    background-color: #a9a8a8;
+}
+#filter_container .category {
+    font-size: 1vw;
+}
+#filter_container .category.activeCategory, #filter_container .category:hover {
+    color: #e9c966;
+    border-bottom: 3px solid #e9c966;
+}
+.game .game_badge.hot {
+    background-color: #e9c966;
+}
+
+#mobile_games_listing h3{
+	color:#e9c966 !important;
+}
+.game .game_badge.new {
+    background-color: #e9c966;
+    color: #e9c966;
+}
+.game .game_overlay a {
+    background-color: #e9c966;
+}
+#games_listing_container #all_games_button, #mobile_games_listing #all_games_button {
+    font-size: 1.2vw;
+    background-color: #e9c966;
+    color: black;
+	padding-top: 0.8vw;
+}
+.game .game_title {
+    font-size: 1vw;
+    font-weight: 400;
+}
+/* games end*/
+
+/* top promotions */
+
+.top_promotion_inner .promo_desc{
+	font-size:14px !important;
+}
+
+#top_promo_dots .top_promo_dot.activePromo{
+	background-color:#e9c966 !important;
+}
+
+.title_#ffffff span{
+		color:#ffffff !important;
+	}
+
+.top_promotion .top_promotion_inner .promo_des{
+	font-size:14px !important;
+}
+
+span.topPromoArrow.left:hover {
+    border-left: 2px solid #e9c966;
+    border-bottom: 2px solid #e9c966;
+}
+span.topPromoArrow.right:hover {
+    border-right: 2px solid #e9c966;
+    border-bottom: 2px solid #e9c966;
+}
+.image_overlay .play_now, .top_promotion_inner .play_now {
+    background-color: #e9c966;
+    color: black;
+	padding-top: 0.8vw;
+}
+.image_overlay .more_info, .top_promotion_inner .more_info {
+    background-color: #e2e2e2;
+    color: black;
+	padding-top: 0.8vw;
+}
+.image_overlay a {
+    font-size: 0.9vw;
+}
+.top_promotion .top_promotion_badge {
+    background-color: #e9c966;
+}
+.image_contaiener .counter {
+    background-color: #f8d66c;
+    color: #ffffff;
+}
+#top_promotions #top_promo_slide {
+    background-color: #717171;
+}
+#top_promo_slide div {
+    background-color: #e9c966;
+}
+#top_promo_dots .top_promo_dot {
+    background-color: #717171;
+}
+@media (min-width: 980px) {
+    #top_promo_dots.slideRight .top_promo_dot:nth-child(n+3) {
+        background-color: #e9c966;
+    }
+    #top_promo_dots.slideLeft .top_promo_dot:nth-child(-n+3) {
+        background-color: #e9c966;
+    }
+}
+#top_promotions .all_promo_button {
+    font-size: 1.2vw;
+	padding-top: 0.8vw;
+}
+/* top promotions end */
+
+/* main banner */
+#banner_container .slide .slide_overlay {
+    background: linear-gradient(115deg, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    height: 100%;
+}
+.slide.box .slide_inner, .slide.box2 .slide_inner, .slide.offerBox .slide_inner, .slide.welcomeOfferBox .slide_inner {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 70px;
+    box-shadow: 0px 0px 25px #000000;
+}
+.slide_inner .slide_button {
+    background-color: #e9c966;
+}
+.slide_inner .slide_button.blue {
+    color: #ffffff;
+    background-color: #09d6db;
+}
+span.mainBannerArrow.left:hover {
+    border-left: 2px solid #e9c966;
+    border-bottom: 2px solid #e9c966;
+}
+span.mainBannerArrow.right:hover {
+    border-right: 2px solid #e9c966;
+    border-bottom: 2px solid #e9c966;
+}
+#main_banner_dots .banner_dots.activeSlide {
+    background-color: #e9c966;
+}
+#banner_container .slide .slide_overlay {
+    background: none;
+}
+
+.slide_inner .subheading{
+	color:#ffffff !important;
+}
+
+.slide_inner .divider{
+	background-color:#e9c966 !important;
+}
+.slide_inner .slide_button {
+    border: 4px solid #e9c966;
+    font-size: 1.35vw;
+    padding: calc(0.75vw - 4px) 0px;
+}
+.slide_inner .slide_button.yellow {
+    background-color: #e9c966;
+    color: black;
+}
+.slide_inner .slide_button.blue {
+    background-color: #ffffff;
+    color: #f8d66c;
+}
+.slide.welcomeOfferSlice .slide_inner p {
+    display: none;
+}
+.slide.welcomeOfferSlice .slide_inner .subheading {
+    font-size: 2.5vw;
+    line-height: 1em;
+    margin-bottom: 0px;
+}
+.slide.welcomeOfferSlice .slide_inner .first_line, .slide_inner .first_line, .slide.welcomeOfferBox .slide_inner .first_line {
+    font-size: 5.5vw;
+    line-height: 1.2em;
+    color: #e9c966;
+    font-weight: 600;
+}
+
+.de .es .first_line{
+	font-size:4.3vw !important;
+}
+
+.custom_title{
+	width:100% !important;
+	max-width:100% !important;
+}
+.slide.welcomeOfferSlice .slide_inner .second_line {
+    font-size: 3.8vw;
+    line-height: 1em;
+    color: #e9c966;
+    font-weight: 600;
+}
+.slide_inner .second_line {
+    line-height: 1em;
+    font-size: 2.5vw;
+}
+
+.casino_toggle, .casino_toggle.vc_row {
+ width: 100%;
+padding: 0px 20%;
+}
+/* main banner end */
+
+/* footer */
+#payment_methods {
+    background-color: #e9c966;
+}
+#main-menu {
+    background-color: #282828;
+}
+#main-navigation .main-nav ul li a {
+    color: #ffffff;
+}
+#main-navigation .main-nav ul li a:hover {
+    color: #e9c966;
+}
+#terms {
+    background-color: #282828;
+}
+
+.term_icon div{
+	min-width:50px !important;
+}
+
+.term_icon div img:nth-child(2){
+	min-width:100px !important;
+}
+
+.www .term_icon div img:nth-child(2){
+	min-width:100px !important;
+}
+
+.de .term_icon div img:nth-child(2){
+	min-width:100px !important;
+}
+
+
+
+#copyright {
+    border-top: 2px solid #e9c966;
+    background-color: #a9a8a8;
+}
+#copyright p {
+    font-size: 0.9vw;
+	color:#ffffff;
+}
+#payment_methods img {
+    width: 5.5vw;
+}
+/* footer end */
+
+/* casino toggle */
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading,
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+    border-bottom: 4px solid #e9c966;
+}
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel:not(.vc_active) .vc_tta-panel-heading:focus, 
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel:not(.vc_active) .vc_tta-panel-heading:hover {
+    background-color: black;
+}
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body,
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-body {
+    background-color: rgba(0,0,0,0);
+}
+.casino_toggle .vc_tta-title-text {
+    color: #ffffff;
+	font-size: 28px;
+}
+.casino_toggle .vc_tta-panel-body p {
+    color: #ffffff;
+	font-size:14px;
+}
+.casino_toggle .vc_tta-panel-body h3 {
+    color: #ffffff;
+	font-size: 18px;
+}
+
+.vc_tta-panel-body h3 {
+	font-size: 1.7vw;
+}
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_tta-controls-icon::before,
+.wpb-js-composer .casino_toggle .vc_tta-color-grey.vc_tta-style-classic .vc_active .vc_tta-panel-heading .vc_tta-controls-icon::before {
+    border-color: #ffffff;
+}
+/* casino toggle end */
+
+/* vip */
+.full_image .vc_figure, .full_image .vc_single_image-wrapper, .full_image img {
+    width: 100% !important;
+}
+
+.vip_inner_contaienr h2 {
+	color:#ffffff !important;
+}
+.vip_container_2 ul {
+	list-style-type: disc !important;
+	margin: 0px auto;
+    position: relative;
+    width: 37%;
+	text-align:left;
+}
+.vip_container_2 li {
+	font-size: 20px;
+}
+.vip_container_2 {
+	width:55%;
+}
+.vip_title span {
+	font-size: 80px;
+}
+#vip_text {
+	text-align:center;
+}
+#vip_text p {
+	font-size:25px;
+	line-height:0.7;
+	text-align: left;
+    margin-left: 17vw;
+}
+.vip_button {
+	padding: 0.9vw 2.1vw;
+	font-size:25px;
+	margin-top: 30px; 
+	margin-bottom: 30px;
+	padding-top: 1.1vw;
+	margin-right: 9vw;
+}
+.table_heading {
+    background-color: #000000;
+}
+.table_container {
+    background-color: transparent;
+}
+.vip-table .table_heading p {
+    color: #dbb183;
+}
+.table_container .row_heading {
+    
+}
+/* vip end */
+
+/* modal */
+.modal-promo button.close {
+    color: #08906b;
+}
+.modal-promo .modal-inner {
+    background-color: #000000;
+}
+.modal-promo .header-title, .lead-modal .modal-inner .header-title {
+    color: #ffffff;
+}
+.lead-modal .modal-inner .header-title {
+    color: #3f4043;
+}
+.modal-promo .modal-header .header-title span {
+    color: #09d6db;
+}
+.modal-header .counter {
+    background-color: #09d6db;
+}
+.modal-promo .modal-text::-webkit-scrollbar-thumb {
+    background: rgba(14,185,138,0.8);
+}
+.modal-promo .modal-text p,.modal-promo .modal-text li {
+    color:#4b4a4a;
+}
+.modal-promo .header-title-container {
+    background: none;
+}
+.modal-promo td {
+    color: #ffffff;
+}
+/* modal end */
+
+/*T&C*/
+.page-id-3058 td{
+	color:#ffffff;
+}
+
+/* promo */
+body.promotions-page .entry-header {
+    display: none;
+}
+body.promotions-page.modal-open {
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 0px !important;
+}
+#promotions_container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.promotion {
+    width: 49%;
+    margin-right: 2%;
+    display: inline-block;
+    margin-bottom: 2.5vw;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+body.iframe #menu-links li:nth-child(2){
+	display:none !important;
+}
+
+@media (min-width:981px) {
+    .promotion:nth-child(2n) {
+        margin-right: -4px;
+    }
+    .promotion.marginRight {
+        margin-right: 2%;
+    }
+    .promotion.noMargin {
+        margin-right: -4px;
+    }
+}
+.promotion .promo_img {
+    width: 100%;
+    height: auto;
+}
+.promotion .image_contaiener .counter {
+    width: 60%;
+    left: 20%;
+}
+.promotion .promotion_badge {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: auto;
+    min-width: 100px;
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #e9c966;
+    line-height: 35px;
+    text-align: center;
+    padding: 0px 20px;
+}
+.promotion .promotion_inner {
+    padding: 10px 30px 70px 30px;
+    background-color: #ffffff;
+	position:relative !important;
+
+}
+.promotion_inner .promo_title, .promotion_inner .promo_desc, #next_day .promo_title, #next_day .promo_desc, .promo_desc p, .promotion_inner .more-info, .promotion_inner, .optin_container p a {
+    color: #3f4043;
+}
+.promotion_inner .promo_title, #next_day .promo_title {
+    font-size: 18px;
+}
+.promotion_inner .more-info {
+    display: inline-block;
+    margin-top: 15px;
+	position: absolute;
+    bottom: 10px;
+}
+.promotion_inner .more-info:hover {
+    transform: scale(1.1);
+}
+.promotion_inner .promo_desc, #next_day .promo_desc, .promotion_inner .more-info, .optin_container p a {
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.promotion_inner .promo_desc {
+    margin-bottom: 0px;
+}
+.promotion_inner .modal-promo .promo_desc {
+    color: #ffffff;
+}
+.promotion_inner .personal-score-wrapper {
+    margin-top: 1vw;
+}
+.promotion_inner .personal-score-wrapper .username-field, #personal_score_container .personal-score-wrapper .username-field {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 0.8vw;
+    margin-left: 0px;
+    margin-right: 2%;
+    height: auto;
+    width: calc(80% - 130px);
+    background-color: #e5e5e5;
+    border: 1px solid transparent;
+    outline: none;
+    vertical-align: middle;
+}
+.promotion_inner .personal-score-wrapper .loader-score {
+    border: 4px solid #e9c966;
+    border-top: 4px solid #f1f1f1;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
+    display: inline-block;
+    animation: spin 2s linear infinite;
+    vertical-align: middle;
+}
+.personal-score-wrapper .score-result,
+.personal-score-wrapper .no-position-score {
+    color: #e9c966;
+    font-size: 1.75vw;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.personal-score-wrapper .no-points-score{
+	text-align: center;
+    margin: 15px auto;
+    padding: 0 1.25rem;
+	color: #e9c966;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.promotion_inner .personal-score-wrapper .username-field:focus,
+#personal_score_container .personal-score-wrapper .username-field:focus {
+    border: 1px solid #000000;
+}
+.promotion_inner .promo_button,
+.promo_footer .promo_button,
+.promotion_inner .personal-score-wrapper .promo_button,
+#personal_score_container .personal-score-wrapper .promo_button,
+.promotion_inner .personal-score-wrapper .promo_button.join_leaderboard {
+    padding: 0.5vw 1.75vw;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8vw;
+}
+.promotion_inner .personal-score-wrapper .promo_button.join_leaderboard {
+    font-size: 14px;
+    width: auto;
+    margin-right: 0px;
+}
+.promo_footer .promo_button {
+    font-size: 0.8vw;
+    padding: 0.5vw 1.5vw;
+}
+.promo_button:hover {
+    transform: scale(1.1);
+}
+body .promotion p.leaderboard_button_container {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+p.leaderboard_button_container .leaderboard_button {
+    color: #3f4043 !important;
+    display: inline-block;
+}
+.promotion .leaderboard_button:hover {
+    transform: scale(1.1);
+}
+.promotion .join_leaderboard {
+    background-color: #e9c966;
+    color: #3f4043 !important;
+    display: inline-block;
+}
+.promotion_inner .personal-score-wrapper .promo_button, #personal_score_container .personal-score-wrapper .promo_button {
+    color: #3f4043;
+    height: auto;
+    padding: 0.5vw 0px;
+    width: 6.5vw;
+    margin: 0px;
+    box-shadow: none;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+.promotion_inner .promotion-code-wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    background: none;
+    padding: 0px;
+}
+.promotion_inner .promotion-code-wrapper span, .promotion_inner .promotion-code-wrapper span p, .promotion_inner .promotion-code-wrapper a, .optin_container p.text_container a {
+    font-weight: 600;
+    color: #e9c966;
+}
+.modal-promo button.close {
+    top: -10px;
+    right: -10px;
+    z-index: 9;
+}
+.modal-promo button.close span {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    color: #000000;
+    padding: 5px 8px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.promotion_inner .modal-promo .terms_title {
+    padding-left: 20px;
+    color: #ffffff;
+	text-align: left;
+}
+.modal-promo .modal-text p, .modal-promo .modal-text li {
+    color: #ffffff;
+}
+.promotion_inner .modal-promo .modal-text, .top_promotion .modal-promo .modal-text {
+    height: auto;
+}
+.promo_footer {
+    padding: 30px 1.5vw;
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+}
+.promo_footer .promo_button.play_now, .promo_footer .promo_button.leaderboard_button, .promo_footer .promo_button.code {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.promo_footer .promo_button.play_now:hover, .promo_footer .promo_button.leaderboard_button:hover, .promo_footer .promo_button.code:hover {
+    transform: translate(0, -50%) scale(1.1);
+}
+.promo_footer .promo_button.play_now, .promo_footer .promo_button.code {
+    background-color: #e9c966;
+    color: #000000;
+}
+.promo_footer.two_buttons .promo_button.play_now {
+    left: 1.75vw;
+}
+.promo_footer:not(.two_buttons) .promo_button.play_now {
+    right: 1.75vw;
+}
+.promo_footer .promo_button.leaderboard_button {
+    background-color: #e9c966;
+    color: #000000;
+    right: 1.75vw;
+    padding: 0.5vw 1.5vw;
+}
+/* special promo */
+#special_promo_container #today_bonus>h3, #special_promo_container #today_bonus>h4, #special_promo_container #today_bonus>h5 {
+    color: #e9c966;
+}
+#next_day #next_day_date {
+    color: #e9c966;
+}
+#special_promo_container #next_day {
+    border: 1px solid #e9c966;
+    background-color: #3f4043;
+}
+#special_promo_container #next_day .promo_desc, #special_promo_container #next_day .promo_title {
+    color: #e9c966;
+}
+/* promo end */
+
+/* banking */
+.banking_payment .payment_table_container {
+    background-color: #ffffff;
+}
+.banking_payment .bottom-tr .collapse.in {
+    border-bottom: 1px solid #e9c966;
+}
+.banking_payment .accordion-toggle td, .banking_payment .accordion-toggle .text-success, .banking_payment .bottom-tr td {
+    color: #000000 !important;
+}
+.banking_payment .accordion-toggle.collapsed {
+    border-bottom: 1px solid #e9c966;
+}
+.banking_payment .accordion-toggle .toggle_triangle {
+    border-left: 10px solid #e9c966;
+}
+.banking-payment-titles p, .banking-payment-titles strong {
+    font-size: 17px;
+	color: #000000 !important;
+}
+.payment_table_container .deposit-type-name, .payment_table_container td {
+    font-size: 14px;
+}
+.banking_payment .table>thead>tr>th, .banking_payment .table>tbody>tr>th, .banking_payment .table>tfoot>tr>th, .banking_payment .table>thead>tr>td,
+.banking_payment .table>tbody>tr>td, .banking_payment .table>tfoot>tr>td {
+}
+.payment_table_container .deposit-type-name {
+    margin-top: 0.6vw;
+    display: inline-block;
+}
+.payment_table_container .deposit-img-container {
+    text-align: left !important;
+}
+
+table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td, table > tfoot > tr > th, table > tfoot > tr > td{
+	border-top:0px solid #ffffff !important;
+}
+/* banking end */
+
+/* 404
+/*body.error404 #header_section {
+    display: none;
+}*/
+#page404 {
+    background-image: url(../../plugins/casino-enhancement/assets/img/spinsamba/BG.jpg);
+}
+#page404 #text_container h2, #page404 #text_container h3, #page404 #text_container p {
+    color: #3f4043;
+}
+#page404 #text_container .button.black {
+    border: 2px solid #000000;
+    color: #000000;
+}
+/* 404 end */
+@media screen and (max-width: 770px) {
+    #footer_container #main-menu {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 1025px) {
+
+    .www #footer_container #main-menu .nav-cont:nth-last-child(-n+3), .eu #footer_container #main-menu .nav-cont:nth-last-child(-n+3){
+        display:block !important;
+    }
+
+    #footer_container .menu a{
+        font-size: 3.5vw;
+    }
+
+    #footer_container #main-menu{
+        flex-direction: unset;
+        align-items: center;
+    }
+	
+	.no-withdrawal{
+		display:none !important;
+	}
+	
+	#latest_winners_contaienr #triangle{
+		right: -20px;
+		border-top: 28px solid transparent;
+		border-bottom: 26px solid transparent;
+		border-left: 20px solid #e9c966 !important;
+	}
+	
+	#payment_methods a, #terms .term_icon{
+		margin-right:5vw !important;
+	}
+	
+	.term_icon div {
+    min-width: 45px !important;
+    margin-left: -8px;
+	}
+	
+	.page-vip .post-entry{
+	background: url("../../uploads/2019/09/VIP-Mobile2.jpg");
+	background-position:none;
+	background-size: 100%;
+	padding-bottom:100px;	
+	}
+	
+	.vip_custom_title {
+    bottom: 105px !important;
+	}
+	.page-vip.wpb-js-composer .vc_tta-color-white.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading{
+		border-color:none !important;
+	}
+	
+	.page-vip.wpb-js-composer .vc_tta-color-white.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body{
+		background-color: transparent !important;
+	}
+	
+	.page-vip.wpb-js-composer .vc_tta-color-white.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, .wpb-js-composer .vc_tta-color-white.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, .wpb-js-composer .vc_tta-color-white.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before{
+		border:none !important;
+		border-color: transparent;
+	}
+	
+	.page-vip .vc_tta-panel-heading{
+		border:none !important;
+	}
+	
+	.vip-table {
+		top: 200px !important;
+	}
+	
+	#silver .vc_tta-title-text:before{
+		background-image: url('/wp-content/uploads/2021/06/logo_vip_page1.png');
+	}
+	
+	#royal .vc_tta-title-text:before{
+		background-image: url('/wp-content/uploads/2021/06/logo_vip_page2.png');
+	}
+	
+	#vip .vc_tta-title-text:before{
+		background-image: url('/wp-content/uploads/2021/06/logo_vip_page5.png');
+	}
+	
+	#vip_elite .vc_tta-title-text:before{
+		background-image: url('/wp-content/uploads/2021/06/logo_vip_page3.png');
+	}
+	
+	#vip_platinum .vc_tta-title-text:before{
+		background-image: url('/wp-content/uploads/2021/06/logo_vip_page4.png');
+	}
+	
+	.vip_table_mobile {
+    position: relative;
+    top: 6vh;
+    padding-bottom: 30px;
+	}
+	
+	.vip_inner_contaienr{
+		top:0px;
+		width: 75% !important; 
+	}
+	.vip_custom_title{
+		bottom: 87px;
+	}
+	.de .slide_inner .slide_button {
+    font-size: 4.5vw !important;
+	}
+	
+	.promotion_inner .more-info {
+		position:relative;
+		bottom:0px;
+	}
+	
+	#main_banner_overlay{
+		height: 29vh;
+	}
+	.casino_toggle, .casino_toggle.vc_row{
+		padding:0px 5% !important;
+	}
+	#contact_container .custom_title{
+		margin-top:10px !important;
+	}
+	.vip_container_2 ul{
+		width:73% !important;
+	}
+	.vip_container{
+		padding:0px !important;
+	}
+	.vip_container_2 li {
+		font-size: 3.5vw;
+		line-height: 1.1;
+	}
+	.vip_container_2 li span{
+		font-size: 13px;
+	}
+	#secondary-header .login-head a{
+		padding-top: 3vw !important;
+	}
+	.image_overlay .more_info, .top_promotion_inner .more_info{
+		padding-top: 3.3vw;
+	}
+	.image_overlay .play_now, .top_promotion_inner .play_now{
+		padding-top: 3.3vw;
+    }
+    .top_promotion_inner a {
+        font-size: 3vw;
+    }
+	#top_promotions .all_promo_button{
+		padding-top:3.3vw;
+	}
+	#games_listing_container #all_games_button, #mobile_games_listing #all_games_button{
+		padding-top:3.3vw;
+	}
+	.vip_button{
+		padding-top:3.3vw !important;
+	}
+	#lw_slider .scroller{
+		padding-top: 2.2vw !important;
+	}
+	.chat_parrot img {
+        width: 60px !important;
+        margin-right: 5px;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vip_container{
+		background-image: url(../img/HomepageMobile_1125x500px_VIP.jpg) !important;
+		background-size: 100% 100% !important;
+	}
+	.vip_container_2{
+		float:right;
+		position:relative;
+		left:3vw;
+	}
+	.vip_title span{
+		font-size:7vw;
+	}
+	#vip_text p{
+		font-size: 3vw;
+		text-align: center;
+		margin-left: 0vw;
+	}
+	.vip_button {
+        font-size: 4vw;
+        padding: 10px;
+        margin-bottom:0px !important;
+        margin-top:10px !important;
+	}
+	.casino_toggle .vc_tta-title-text, .casino_toggle .vc_tta-panel-body h3 {
+        font-size: 4.5vw !important;
+    }
+    .casino_toggle .vc_tta-panel-body p {
+        font-size: 3.5vw;
+    }
+	.video_and_images .casino_video {
+        padding-top: 0px;
+	
+	}
+    #lw_info h3 {
+        font-size: 4vw;
+		margin-top:0px;
+    }
+
+    /* header */
+    #secondary-header .main-nav {
+        background: black;
+    }
+    #hamburger .first, #hamburger .second, #hamburger .third {
+        background-color: #ffffff;
+    }
+    #header_section {
+        height: 17.5vw;
+    }
+    #site-branding #logo img {
+        width: 45vw;
+        margin-top: 0;
+        max-width: none;
+		content: url("../img/casino_midas_logo.png");
+    }
+	.de #site-branding{
+		left: 40%;
+	}
+	.de #site-branding #logo img {
+        width: 42vw;
+        max-width: none;
+		content: url("../img/casino_midas_logo.png");
+    }
+	#hamburger{
+		z-index:2000;
+	}
+	#menu-links .lang_bar>a:first-child{
+		padding: 1.61vw 2.5vw !important;
+		padding-right: 3vw !important;
+	}
+    /* header end */
+
+    /* top promotions */
+	.custom_title span{
+		padding:10px 0px !important;
+	}
+	
+	span.topPromoArrow{
+		border-bottom:2px solid #ffffff !important;
+	}
+	
+	span.topPromoArrow.left{
+		border-left: 2px solid #ffffff !important;
+	}
+	span.topPromoArrow.right{
+		border-right: 2px solid #ffffff !important;
+	}
+	span.topPromoArrow.right:hover {
+        border-right: 2px solid #e9c966;
+        border-bottom: 2px solid #e9c966;
+	}
+    #top_promotions .all_promo_button, #games_listing_container #all_games_button, #mobile_games_listing #all_games_button {
+        font-size: 16px;
+    }
+    /* top promotions end */
+
+    /* custom title */
+    .custom_title {
+        font-size: 7vw;
+    }
+    .custom_title.smaller {
+        width: 100%;
+        position: relative;
+        left: initial;
+    }
+    /* custom title end */
+
+    /* games */
+    .game .game_title {
+        font-size: 14px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+    }
+    #mobile_games_listing #filter_container {
+        background-color: #a9a8a8;
+    }
+    #filter_container .category {
+        font-size: 13px;
+    }
+    /* games end */
+
+    /* video */
+    .video_and_images {
+        width: 100%;
+    }
+    .casino_video {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* video end */
+
+    /* latest winers */
+    #latest_winners_contaienr #triangle {
+        border-left: 34px solid #e9c966;
+    }
+    /* latest winers end */
+
+    /* vip */
+    .vip_table_mobile .vc_tta-panel-heading {
+        background-color: rgb(205, 148, 59, 0) !important;
+    }
+    .vip_table_mobile .vc_tta-title-text {
+        color: #000000;
+    }
+	
+	.wpb-js-composer .vc_tta.vip_table_mobile .vc_tta-controls-icon.vc_tta-controls-icon-chevron::before, .wpb-js-composer .vc_tta.vip_table_mobile .vc_active .vc_tta-controls-icon.vc_tta-controls-icon-chevron::before{
+		border-color: #000000 !important;
+	}
+    .vip_table_mobile .vc_tta-controls-icon.vc_tta-controls-icon-plus:before, .vip_table_mobile .vc_tta-controls-icon.vc_tta-controls-icon-plus:after {
+        border-color: #ffffff !important;
+    }
+    .vip_table_mobile .vc_tta-panel-body p {
+        color: #000000;
+    }
+    .vip_table_mobile .vc_tta-panel-body .row_heading {
+        color: #000000;
+    }
+    /* vip end */
+
+    /* casino icons */
+    #icons_container {
+        background-color: #ffffff !important;
+    }
+    /* casino icons end */
+	
+    /* promo */
+    html.promo_page_in_iframe, body.iframe.page-promotions {
+        height: 100% !important;
+    }
+    body.iframe.page-promotions #header_section, body.iframe.page-promotions .inner_banner, body.iframe.page-promotions .chat_parrot {
+        display: none;
+    }
+	
+	
+    body.iframe.page-promotions {
+        padding-top: 0px !important;
+        overflow-x: hidden;
+    }
+    #promotions_outer_container .custom_title {
+        width: 125%;
+        position: relative;
+        left: -12.5%;
+    }
+    body.iframe #promotions_outer_container {
+        padding-top: 20px;
+    }
+    #promotions_container {
+        width: 90%;
+    }
+    .promotion {
+        width: 100%;
+        margin-right: 0px;
+        display: block;
+        margin-bottom: 8vw;
+        background-color: #ffffff;
+    }
+    .promotion .promotion_badge {
+        min-width: 50px;
+        padding: 0px 10px;
+    }
+    .promotion_inner .promo_title, #next_day .promo_title {
+        font-size: 20px;
+    }
+    .promotion_inner .promo_desc, .promotion_inner .promo_desc p, #next_day .promo_desc, #next_day .promo_desc p, .promotion_inner .more-info, .optin_container p a {
+        font-size: 15px;
+        margin-bottom: 3vw;
+    }
+    .promotion .image_contaiener .counter {
+        width: 80%;
+        left: 10%;
+    }
+    .promotion .promotion_inner {
+        padding: 10px 10px;
+    }
+    .promo_footer {
+        padding: 8vw;
+    }
+    .promotion .leaderboard_button {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: none;
+        background-color: transparent;
+        color: #732793;
+        text-decoration: underline;
+    }
+    .promotion .leaderboard_button:hover {
+        transform: scale(1.1);
+        color: #732793;
+        text-decoration: underline;
+    }
+    body.iframe .mobile .promotion_inner .promotion-code-wrapper,
+    body.iframe .promo_footer .promo_button.play_now,
+    body .promo_footer .promo_button.code,
+    body .promotion p.leaderboard_button_container,
+    body.iframe .promo_footer.has_promocheck .promo_button.leaderboard_button,
+    body.iframe .desktop .promo_footer {
+        display: none;
+    }
+    body.iframe .promo_footer .promo_button.code {
+        display: inline-block;
+        left: 50%;
+        white-space: nowrap;
+        transform: translate(-50%, -50%);
+    }
+    body.iframe .promotion.has_promocheck p.leaderboard_button_container {
+        display: block;
+    }
+    .promotion_inner .promo_button, .promo_footer .promo_button, .promo_footer .promo_button.leaderboard_button, .promo_footer .promo_button.play_now, .promo_footer .promo_button.code {
+        font-size: 3.6vw;
+        padding: 2.5vw 7vw;
+    }
+	
+    .promotion_inner .personal-score-wrapper .promo_button, #personal_score_container .personal-score-wrapper .promo_button {
+        font-size: 3vw;
+        padding: 5px 5px;
+        width: 85px;
+    }
+    .promotion_inner .personal-score-wrapper .promo_button.join_leaderboard {
+        width: auto;
+    }
+    .promotion_inner .personal-score-wrapper .username-field, #personal_score_container .personal-score-wrapper .username-field {
+        font-size: 3vw;
+        width: calc(80% - 70px);
+        padding: 5px 15px;
+    }
+    .promotion_inner .personal-score-wrapper .loader-score {
+        width: 7vw;
+        height: 7vw;
+    }
+    .personal-score-wrapper .score-result, .personal-score-wrapper .no-position-score {
+        font-size: 7vw;
+        vertical-align: middle;
+    }
+    .promo_footer.two_buttons .promo_button.play_now {
+        left: 10px;
+    }
+    .promo_footer:not(.two_buttons) .promo_button.play_now {
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    .promo_footer .promo_button.leaderboard_button {
+        right: 10px;
+        text-decoration: none;
+        margin: 0px;
+    }
+    #special_promo_container .promotion {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 8vw;
+    }
+    #special_promo_container #next_day {
+        width: 80%;
+        border: 1px solid #e9c966;
+        background-color: #3f4043;
+    }
+    #special_promo_container #next_day .promo_desc, #special_promo_container #next_day .promo_title {
+        color: #e9c966;
+    }
+    /* promo end */
+
+    /* banking */
+    .banking_payment .mobile_deposit_info h3 {
+        color: #e9c966;
+    }
+    .banking_payment .mobile_deposit_info p {
+        color: #000000;
+    }
+    /* banking end */
+
+    /* 404 */
+    #page404 {
+        background-image: url(../../plugins/casino-enhancement/assets/img/spinsamba/BG_mobile.jpg);
+    }
+    /* 404 end */
+
+    /* main banner */
+    .slide.welcomeOfferSlice .slide_inner .first_line, .slide_inner .first_line, .slide.welcomeOfferBox .slide_inner .first_line {
+        font-size: 13vw;
+		line-height: 1.1;
+    }
+	
+    .slide_inner .second_line {
+        font-size: 7vw;
+		line-height: 1.1;
+    }
+    .slide.welcomeOfferSlice .slide_inner .subheading {
+        font-size: 7vw;
+    }
+    .slide.welcomeOfferSlice .slide_inner .second_line {
+        font-size: 9vw;
+    }
+    .slide_inner .slide_button {
+        font-size: 5.5vw;
+        padding: 5px 0px;
+        width: 45vw;
+    }
+    .slide.slice2 .slide_inner, .slide.slice .slide_inner, .slide.offerSlice .slide_inner {
+        background: none;
+    }
+    /* main banner end */
+
+    /* footer */
+    #copyright p {
+        font-size: 11px;
+    }
+    #payment_methods img {
+        width: 70px;
+    }
+    /* footer end */
+
+    /* inner */
+    .inner_container .inner_title_purple h2, .inner_container .inner_title_blue h2 {
+        font-size: 22px;
+    }
+    .inner_container .inner_text p, .inner_container .inner_text li, .inner_container .inner_text h4 {
+        font-size: 14px;
+    }
+	
+	.payment_table_container .deposit-type-name{
+		margin-top:3.6vw;
+		margin-left: 7vw;
+	}
+	
+    .payment_table_container .deposit-type-name, .payment_table_container td {
+        font-size: 12px;
+    }
+    .banking-payment-titles p, .banking-payment-titles strong {
+        font-size: 14px
+    }
+    #contact_container {
+        background-image: url(../../uploads/2019/09/Midas_ContactUs_Mobile_BG.jpg) !important;
+        padding-top: 38vw;
+		padding-top: 15vw;
+		padding-bottom: 35vw;
+		margin-top: 0px !important;
+		background-size: cover !important;
+		padding-left: 13vw;
+	}
+    
+	
+	.page-contact-us .vc_col-sm-12{
+		width:80% !important;
+		
+	}
+    #contact_container .vc_column-inner p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+	
+	#contact_container .custom_title span {
+		left: 3vw;
+		top: 10px;
+	}
+	
+    #contact_container .vc_column-inner p img {
+        width: 15px;
+    }
+    #contact_container .inner_text {
+        margin-bottom: 0px;
+        width: 60vw;
+    }
+    #contact_container .small_divider {
+        display: none;
+    }
+    /* inner end */
+}
+
+
+/* tablet */
+@media screen and (min-width: 700px) and (max-width: 1025px) {
+    /* promotions */
+    #promotions_container {
+        text-align: center;
+    }
+	
+    .promotion {
+        width: 90%;
+        display: inline-block;
+        margin-right: 0;
+        text-align: left;
+    }
+    .promotion:nth-child(2n) {
+        margin-right: 0px;
+    }
+    .promotion_inner .promo_title {
+        font-size: 3vw;
+    }
+    .promotion_inner .promo_desc, .promotion_inner .promo_desc p, .promotion_inner .more-info {
+        font-size: 2vw;
+    }
+
+    /* latest winners */
+    #latest_winners_contaienr #triangle {
+        border-left: 25px solid #732793;
+    }
+    /* latest winners end */
+
+    .promo_footer {
+        padding: 6vw;
+    }
+    .promotion_inner .promo_button,
+    .promo_footer .promo_button,
+    .promo_footer .promo_button.leaderboard_button,
+    .promo_footer .promo_button.play_now,
+    .promo_footer .promo_button.code,
+    .promotion_inner .personal-score-wrapper .promo_button.join_leaderboard {
+        padding: 1vw 4vw;
+    }
+    .promotion_inner .personal-score-wrapper .promo_button, #personal_score_container .personal-score-wrapper .promo_button {
+        padding: 0.5vw 1.75vw;
+        width: auto;
+    }
+    .promotion_inner .more-info {
+        margin-bottom: 0;
+    }
+}
+
+/* iPad Pro */
+@media screen and (min-width: 981px) and (max-width: 1025px) {
+    .promotion {
+        width: 49%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body.spanish #site-branding {
+        left: -15%;
+    }
+    .vip_banner.overlay.vc_row-fluid:not(.vip_page) {
+        background-image: url(/wp-content/uploads/sites/5/2019/04/SPS_VIPbanner_HPmobile_1125x500px_NOtext.jpg) !important;
+    }
+    .vip_banner.vip_page {
+        background-image: url(/wp-content/uploads/sites/5/2018/10/VIP_inner_mobile_img.jpg) !important;
+    }
+    .vip_bullets li {
+        color: #09d6db;
+    }
+}
+
+/* Default layout page */
+body.default header.entry-header {
+    display: none;
+}
+
+body.default h3 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+body.default h4 {
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.code p{
+	margin:0px 0px 0px !important;
+}
+p {
+    color:#ffffff;
+}
+
+a {
+    color:#fff;
+}
+
+/* ====== SpinSamba HomePage styles ================ */
+
+.champ-ticker-wrapper .champ-title {
+    background: #08906b;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow: 0px 6px 8px #848484;
+}
+
+.champ-ticker-wrapper .champ-img {
+    position: relative;
+    top: -20px;
+    float: left;
+}
+
+.champ-ticker-wrapper h4 {
+    position: relative;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+}
+
+.champ-ticker-wrapper .champ-ticker {
+    background: #074e3b;
+    height: 30px;
+    margin-left: 240px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.promotion-code-wrapper, .optin_container .text_container a {
+    text-align: center;
+    padding: 0.6rem 0 0.6rem 0;
+    font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+    .container, .content-area, #featured-area, .home-widgets, #footer #footer-wrapper {
+        width: auto;
+    }
+}
+
+.mejs-container {
+    box-shadow: 2px 2px 5px 0px #848484;
+    border-radius: 10px;
+}
+.mejs-controls {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+li {
+    color:#fff;
+}
+
+/* Leaderboard Styles */
+.leadHolder .lead-title {
+    color: #e9c966;
+}
+.leaderboard-row h2.leaderboard-column {
+    color: #e9c966;
+}
+.leaderboard-row p.leaderboard-column {
+    color: #3f4043;
+}
+/* Leaderboard Styles end */
+
+/* START Personal Score */
+.personal-score-wrapper .check-score {
+    background: #e9c966;
+    border-radius: 10px;
+    height: 33px;
+    border: none;
+    padding: 0 20px;
+    margin: 0;
+    margin-right: 10px;
+    box-shadow: 2px 2px 10px 0px #797979;
+    color: #4e4e4e;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.personal-score-wrapper .no-position-score {
+    text-align: center;
+    margin: 15px auto;
+    padding: 0 1.25rem;
+}
+.score-group-wrapper {
+    padding:0 18px;
+    margin:15px 0;
+}
+.score-group-wrapper .score-result-image, .score-group-wrapper .score-result-title {
+    display: block;
+    text-align: center;
+    color: #3f4043;
+}
+.score-group-wrapper .score-result-image {
+    margin: 0 auto;
+}
+.score-group-wrapper .score-result-image.left {
+    display: inline-block;
+    max-width: 50%;
+    margin: 0;
+    text-align: left;
+}
+.score-group-wrapper .score-result-title {
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+.score-group-wrapper .score-result-title.right {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    min-width: 50%;
+    max-width: 70%;
+    vertical-align: bottom;
+    text-align: left;
+}
+.loader-score {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ebcd80;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.mobile.personal-score-wrapper {
+    margin-top: 20px;
+}
+
+html.vc_mobile, body.promotions-page {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.mobile.personal-score-wrapper input.username-field {
+    width:40%;
+}
+/*iphone 4*/
+@media only screen
+and (max-device-width: 320px)
+and (orientation: portrait) {
+    input.username-field {
+        width:120px;
+    }
+    .personal-score-wrapper .check-score {
+        padding:0 10px;
+    }
+}
+@media only screen
+and (max-device-width: 360px)
+and (orientation: portrait) {
+    input.username-field {
+        width:120px;
+    }
+    .personal-score-wrapper .check-score {
+        padding:0 10px;
+    }
+}
+@media only screen
+and (max-device-width: 340px)
+and (orientation: portrait) {
+    input.username-field {
+        width:120px;
+    }
+    .personal-score-wrapper .check-score {
+        padding:0 10px;
+    }
+}
+@media only screen
+and (min-device-width: 375px)
+and (orientation: portrait) {
+    input.username-field {
+        width:160px;
+    }
+    .personal-score-wrapper .check-score {
+        padding:0 10px;
+    }
+}
+
+/* END Personal Score */
+
+/* START Samba tables style */
+table.samba-table {
+    border: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+/* END Samba tables style */
+
+/*Winners slider*/
+.scrollerWrapper {
+    overflow: hidden;
+    *position: relative;
+}
+ul.scroller {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+	padding-top:0.75vw !important;
+}
+ul.scroller li {
+    display: inline-block;
+    *display: inline;
+    white-space: normal;
+    vertical-align: middle;
+    padding-top: 6px;
+}
+li div {
+    width: 100px;
+    height:20px;
+}
+li span {
+    width: 100%;
+    height: 40px;
+}
+.winners-box-wrapper {
+    color: #ffffff;
+    width: auto;
+    min-width: 200px;
+    margin-right: 30px;
+}
+.winners-box-text-wrapper {
+    width: 140px;
+    height: 20px;
+    font-size: 14px;
+}
+.winners-box-text {
+    color: #fec329;
+}
+
+/* Table Shortcode */
+body.default .su-table.tc {
+    width:400px;
+}
+body.default .su-table .su-even td {
+    background: transparent !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+body.default .su-table td {
+    background: transparent !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+}
+body.touch header .header-row {
+    margin-left:0;
+    margin-right:0;
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+body
+{padding-top:100px !important;}
+
+#hamburger{
+	width:70px !important;
+	height:58px !important;
+}
+
+#hamburger .first, #hamburger .second, #hamburger .third{
+	height:10px !important;
+}
+
+#secondary-header .login-head a.login-btn{
+	font-size:23px !important;
+}
+
+#header_section{
+	height: 12.5vw !important;
+}
+
+#latest_winners_contaienr #triangle{
+	border-left: 20px solid #e9c966 !important;
+}
+
+#latest_winners_contaienr #triangle{
+	border-top: 39px solid transparent !important;
+	border-bottom: 44px solid transparent !important;
+}
+
+#lw_slider .scroller .winners-box-text-wrapper{
+	font-size: 21px !important;
+}
+}

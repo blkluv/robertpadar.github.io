@@ -925,7 +925,6 @@ body.it.page-terms-conditions .wpb_wrapper .inner_text:nth-child(3) p:nth-child(
 		text-align:right !important;
 	}
 	
-	
 }
 
 @media screen and (max-width: 1025px) {
@@ -990,8 +989,8 @@ body.it.page-terms-conditions .wpb_wrapper .inner_text:nth-child(3) p:nth-child(
     }
     #site-branding {
         z-index: 2;
-        left: 45%;
-        top: 50%;
+        top: 30px;
+        left: 100px;
         transform: translate(-50%, -50%);
 		padding-left: 0px !important;
 		padding-right: 0px !important;

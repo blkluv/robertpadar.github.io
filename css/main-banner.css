@@ -4,7 +4,6 @@
     overflow: hidden;
     z-index: 1;
 }
-
 #main_banner_overlay {
     height: 50vh;
 	width:100%;
@@ -12,7 +11,6 @@
     overflow: hidden;
     z-index: 10;
 }
-
 #banner_container .slide {
     height: 100%;
     width: 100%;
@@ -34,6 +32,21 @@
     animation: fadeIn 1s;
     visibility: visible;
     visibility: initial;
+}
+#banner_container #firstImg {
+    background-image:url('../img/cm_hpheadercarousel_1900x663px_livedealer_en.jpg')
+}
+#banner_container #secondImg {
+    background-image: url('../img/cm_hpheadercarousel_1900x663px_glamour77_en_usd.jpg');
+}
+#banner_container #thirdImg {
+    background-image: url('../img/cm_banner_1900x663px_en_usd-1.jpg');
+}
+#banner_container #fourthImg {
+    background-image: url('../img/cm_hpheadercarousel_1900x663px_miamijackpots_en_usd.jpg');
+}
+#banner_container #fifthImg {
+    background-image: url('../img/cm_hpheadercarousel_1900x663px_royal-lounge_en.jpg');
 }
 @keyframes toLeft {
     0% { left: -100%; opacity: 0; }
@@ -159,6 +172,9 @@
 .slide_inner .slide_button:hover {
     transform: scale(1.1);
 }
+.ico {
+    visibility: hidden;
+}
 span.mainBannerArrow {
     width: 25px;
     height: 25px;
@@ -212,6 +228,11 @@ span.mainBannerArrow.right:hover {
     background-color: #ffef00;
 }
 
+@media screen and (max-width: 1500px) {
+    #banner_container {
+        height: 420px;
+    }
+}
 /* phones */
 @media screen and (max-width: 1025px) {
     /* remove this when new design for slice is done */
@@ -219,10 +240,13 @@ span.mainBannerArrow.right:hover {
         background: none;
     }
     #banner_container {
-        height: 500px;
+        height: 285px;
     }
     #banner_container .slide {
         text-align: center;
+    }
+    #header_section {
+        height: 0vw!important;
     }
     .slide .slide_inner {
         width: 90%;
@@ -354,7 +378,113 @@ span.mainBannerArrow.right:hover {
 
 /* iPad Pro */
 @media (min-width: 700px) and (max-width: 1025px) {
+    
+}
+@media only screen and (max-width: 1460px) {
+    #banner_container #firstImg {
+        background-image:url('../img/cm_hpheadercarousel_800x278px_livedealer_en.jpg');
+        background-size: 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+    }
+    #banner_container #secondImg {
+        background-image: url('../img/cm_hpheadercarousel_800x278px_glamour77_en_usd.jpg');
+        background-size: 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+    }
+    #banner_container #thirdImg {
+        background-image: url('../img/cm_banner_800x278px_en_usd-1.jpg');
+        background-size: 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+    }
+    #banner_container #fourthImg {
+        background-image: url('../img/cm_hpheadercarousel_800x278px_miamijackpots_en_usd.jpg');
+        background-size: 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+    }
+    #banner_container #fifthImg {
+        background-image: url('../img/cm_hpheadercarousel_800x278px_royal-lounge_en.jpg');
+        background-size: 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+    }
+}
+
+@media only screen and (max-width: 1226px) {
+    body {
+        padding-top: 0px!important;
+    }
+    .ico {
+        visibility: visible;
+    }
+    #logo img {
+        width: 200px!important;
+    }
+    #secondary-header li {
+        font-size: 14px!important;
+    }
+    #header_section {
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        display:inline-table;
+    }
+    #header_section #secondary-header {
+        display: none;
+    }
+    #header_section a {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    #header_section a.ico {
+        float: right;
+    }
+    #header_section a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+}
+@media only screen and (max-width: 1226px) and (min-width: 1026px) {
     #banner_container {
-        height: 700px;
+        height: 360px;
+    }
+}
+@media only screen and (max-width: 920px) and (min-width: 771px) {
+    #banner_container {
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 770px) and (min-width: 681px) {
+    #banner_container {
+        height: 210px;
+    }
+}
+@media only screen and (max-width: 680px) and (min-width: 541px) {
+    #banner_container {
+        height: 175px;
+    }
+}
+@media only screen and (max-width: 540px) and (min-width: 471px) {
+    #banner_container {
+        height: 140px;
+    }
+}
+@media only screen and (max-width: 470px) and (min-width: 300px) {
+    #banner_container {
+        height: 125px;
     }
 }
