@@ -48,10 +48,8 @@
                 -webkit-order: initial;
                 box-shadow: 17px 0 25px -12px black;
                 height: 100%;
-                width: 256px;
+                width: 14%;
                 z-index: 5;
-                height: 100%;
-                width: 256px;
                 position: fixed;
                 z-index: 1;
                 top: 0;
@@ -62,7 +60,8 @@
                 float: left;
             }
             #header_section {
-                left: 256px;
+                right: 0px!important;
+                width: 80%!important;
             }
             #header  {
                 background: #000;
@@ -130,7 +129,7 @@
             .row {
                 padding-top: 150px!important;
                 padding-right: 40px;
-                margin: 0px!important;
+                margin: 0px;
                 padding: 0px 10px;
                 align-items: center;
                 justify-content: flex-end
@@ -252,15 +251,171 @@
             }
             #gamePlay {
                 display: flex;
-                padding-top: 150px!important;
-                margin: 0px!important;
+                padding-top: 120px!important;
+                margin: 0px;
                 padding: 0px 10px;
                 justify-content: flex-end;
-                padding-right: 200px;
+                padding-right: 320px;
+            }
+            iframe {
+                top: 150px; 
+                width: 1000px; 
+                height: 800px;
             }
             #blackJack, #roulette {
                 padding: 0px;
                 border: 0px;
+            }
+            #payment_methods {
+                margin-left: 200px;
+            }
+            #main-menu {
+                margin-left: 300px;
+            }
+            #terms {
+                margin-left: 200px;
+            }
+            @media only screen and (max-width: 1640px) {
+                #gamePlay {
+                    padding-top: 100px!important;
+                    padding-right: 220px!important;
+                }
+            }
+            @media only screen and (max-width: 1500px) {
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 120px!important;
+                }
+            }
+            @media only screen and (max-width: 1410px) {
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 80px!important;
+                }
+                #payment_methods {
+                    margin-left: 150px;
+                }
+                #main-menu {
+                    margin-left: 200px;
+                }
+                #terms {
+                    margin-left: 150px;
+                }
+            }
+            @media only screen and (max-width: 1300px) {
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 20px!important;
+                }
+                #main-menu {
+                    margin-left: 150px;
+                }
+            }
+            @media only screen and (max-width: 1230px) {
+                iframe {
+                    top: 150px; 
+                    width: 800px; 
+                    height: 640px;
+                }
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 80px!important;
+                }
+            }
+            @media only screen and (max-width: 1070px) {
+                #payment_methods {
+                    margin-left: 100px;
+                }
+                #terms {
+                    margin-left: 100px;
+                }
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 20px!important;
+                }
+                #main-menu li a {
+                    font-size: 10px!important;
+                }
+            }
+            @media only screen and (max-width: 1025px) {
+                #payment_methods {
+                    margin-left: 130px;
+                }
+                #terms {
+                    margin-left: 130px;
+                }
+            }
+            @media only screen and (max-width: 1000px) {
+                iframe {
+                    top: 150px; 
+                    width: 500px; 
+                    height: 400px;
+                }
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 110px!important;
+                }
+            }
+            @media only screen and (max-width: 900px) {
+                #payment_methods {
+                    margin-left: 80px;
+                    padding-left: 60px!important;
+                }
+                #main-menu {
+                    margin-left: 100px;
+                }
+                #terms {
+                    margin-left: 80px;
+                    padding-left: 60px!important;
+                }
+            }
+            @media only screen and (max-width: 750px) {
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 20px!important;
+                }
+            }
+            @media only screen and (max-width: 645px) {
+                .horizontal-elements svg {
+                    width: 40px!important;
+                }
+                iframe {
+                    top: 150px; 
+                    width: 250px; 
+                    height: 200px;
+                }
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 90px!important;
+                }
+                #main-menu {
+                    margin-left: 60px;
+                }
+            }
+            @media only screen and (max-width: 545px) {
+                #payment_methods {
+                    margin-left: 40px;
+                    padding-left: 60px!important;
+                }
+                #main-menu {
+                    margin-left: 40px;
+                }
+                #terms {
+                    margin-left: 40px;
+                    padding-left: 60px!important;
+                }
+            }
+            @media only screen and (max-width: 465px) {
+                .horizontal-elements svg {
+                    width: 25px!important;
+                }
+                .login, .signup {
+                    height: auto;
+                }
+                #gamePlay {
+                    padding-top: 80px!important;
+                    padding-right: 40px!important;
+                }
             }
         </style>
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -274,7 +429,7 @@
         <link rel="stylesheet" id="main_banner-style-css" href="./css/main-banner.css?ver=1.0.8" type="text/css" media="all">
         <link rel="stylesheet" id="promotions-style-css" href="./css/promotions.css?ver=1.0.7" type="text/css" media="all">
         <link rel="stylesheet" id="jackpot-style-css" href="./css/jackpots.css?ver=1.0.0" type="text/css" media="all">
-        <link rel="stylesheet" id="child-style-css" href="https://www.casinomidas.com/wp-content/themes/midas-theme/style.css?ver=1.1.3" type="text/css" media="all">
+        <link rel="stylesheet" id="child-style-css" href="./css/styleV1.1.css" type="text/css" media="all">
         <link rel="stylesheet" id="js_composer_front-css" href="https://www.casinomidas.com/wp-content/plugins/external-wp-bakery/assets/css/js_composer.min.css?ver=5.4.5" type="text/css" media="all">
         <link rel="icon" href="https://www.casinomidas.com/wp-content/uploads/2019/08/cropped-favicon_big-32x32.png" sizes="32x32">
         <link rel="icon" href="https://www.casinomidas.com/wp-content/uploads/2019/08/cropped-favicon_big-192x192.png" sizes="192x192">
