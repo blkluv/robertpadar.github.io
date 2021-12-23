@@ -464,7 +464,7 @@ hr {
 
 /*--------------------------------------------------------------
  2.0 - Typography
---------------------------------------------------------------*/
+--------------------------------------------------------------
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome-webfont.eot?v=4.1.0");
@@ -472,8 +472,8 @@ hr {
   font-weight: normal;
   font-style: normal;
 }
-/**
- * Typography
+
+Typography
 */
 /* HEADINGS ===================*/
 h1, h2, h3, h4, h5, h6,
