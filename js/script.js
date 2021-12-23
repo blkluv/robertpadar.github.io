@@ -6,7 +6,7 @@ var newHtml =
         '<link rel="icon" href="assets/PNG/Cards/cardClubsJ.png" type="image/png" />' +
     '</head>' +
     '<body  onload="init()">' +
-        '<canvas id="canvas" style="width:110px; height:650px"></canvas>' +
+        '<canvas id="canvas" style="width:1100px; height:650px"></canvas>' +
     '</body>' +
     '</html>';
 
