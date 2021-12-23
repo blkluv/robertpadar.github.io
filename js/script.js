@@ -10,7 +10,7 @@ var newHtml =
     '</body>' +
     '</html>';
 
-var newHtml2 = '<iframe src="./roulette/index.html"  style="top: 150px; width: 1100px; height: 898px;"></iframe>';
+var newHtml2 = '<iframe src="./roulette/index.html"></iframe>';
     /*'<html>' +
         '<head>' +
             '<title>3D Roulette</title>' +
