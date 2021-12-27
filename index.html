@@ -58,21 +58,6 @@
                     x.style.display = "block";
                 }
             }
-            function sendEnquiryform(){
-                var name=$('#name').val();
-                var email=$('#email').val();
-                var message=$('#message').val();
-                var subject=$('subject').val();
-                $.post("contact.php",'name='+name+'&email='+email+'&subject='+subject+'&message='+message,function(result,status,xhr) {
-                    if( status.toLowerCase()=="error".toLowerCase() )
-                    { alert("An Error Occurred.."); }
-                    else { 
-                        alert(result);
-                        $('#sucessMessage').html(result);
-                    }
-                })
-                .fail(function(){ alert("something went wrong. Please try again") });
-            }
         </script>
     </head>
     <body>
@@ -184,7 +169,7 @@
                                 </div>
                             </div>
                             <div id="contactUs" class="col-lg-6 contactUs">
-                                <form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform();">
+                                <form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform()">
                                   <div class="row gy-3">
                   
                                     <div class="col-lg-6">
@@ -337,6 +322,7 @@
         <script type='text/javascript' src='./js/responsive-scripts.min.js'></script>
         <script type='text/javascript' src='./js/vc-accordion.min.js'></script>
         <script type='text/javascript' src='./js/vc-tta-autoplay.min.js'></script>
+        <script type='text/javascript' src='./js/contact.js'></script>
     </body>
     <footer>
         <div id="footer_container">
