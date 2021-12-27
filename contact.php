@@ -7,22 +7,20 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $to = "admin@robertpadar.co.uk";
-  $subject = $_REQUEST['subject'];
-         
-  $message = $_REQUEST['message'];
-  //$message .= ;
-         
-  $header = $_REQUEST['email'];
-  $header .= "Cc:afgh@somedomain.com \r\n";
-  $header .= "MIME-Version: 1.0\r\n";
-  $header .= "Content-type: text/html\r\n";
-         
-  $retval = mail ($to,$subject,$message,$header);
-         
-  if( $retval == true ) {
-    echo "Message sent successfully...";
-  }else {
-    echo "Message could not be sent...";
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $from = 'From: agriindiaexp.com';
+  $to = 'admin@robertpadar.co.uk';
+  $subject = $_POST['subject'];
+
+  $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+  if ($_POST['submit']) {
+    if (mail($to, $subject, $body, $from)) {
+        $success = "Message successfully sent";
+    } else {
+        $success = "Message Sending Failed, try again";
+    }
   }
 ?>
