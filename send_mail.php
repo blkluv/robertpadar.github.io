@@ -14,7 +14,7 @@
   $to = 'admin@robertpadar.co.uk';
   $subject = $_POST['subject'];
 
-  $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+  $body = "From: $name\n Subject: $subject\n E-Mail: $email\n Message:\n $message";
 
   if ($_POST['submit']) {
     if (mail($to, $subject, $body, $from)) {
