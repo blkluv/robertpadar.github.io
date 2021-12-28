@@ -1,5 +1,5 @@
 <?php
-$dbhost = "localhost";
+$dbhost = "robertpadar.github.io";
 $dbuser = "root";
 $dbpass = "";
 $dbname = "login_db";
