@@ -272,6 +272,6 @@ var s_iCurFps = 0;
 
 var s_oDrawLayer;
 var s_oStage;
-var s_oMain;
+var s_oMain = null;
 var s_oSpriteLibrary;
-var s_bFullscreen = true;
+var s_bFullscreen = false;
