@@ -22,6 +22,6 @@ canvas {
 }
 @media (orientation: landscape) {
 	#canvas {
-		width: 80%;
+		width: 100%;
 	}
 }
