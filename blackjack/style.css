@@ -12,11 +12,16 @@ canvas {
 }
 @media only screen and (max-width: 770px) and (min-width: 440px) {
 	#canvas {
-		width: fit-content;
+		width: max-content;
 	}
 }
 @media only screen and (max-width: 438px) {
 	#canvas {
-		width: fit-content;
+		width: max-content;
+	}
+}
+@media (orientation: landscape) {
+	#canvas {
+		width: 80%;
 	}
 }
