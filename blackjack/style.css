@@ -12,12 +12,12 @@ canvas {
 }
 @media only screen and (max-width: 770px) and (min-width: 440px) {
 	#canvas {
-		width: 90%;
+		width: 80%;
 	}
 }
 @media only screen and (max-width: 438px) {
 	#canvas {
-		width: 90%;
+		width: 80%;
 	}
 }
 @media screen and (orientation: landscape) {
