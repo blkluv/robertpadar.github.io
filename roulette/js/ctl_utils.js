@@ -105,7 +105,7 @@ function sizeHandler() {
         }
 		
 		//$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
-		$("#canvas").css("height",((h / 2) - (destH / 2))+"px");
+		$("#canvas").css("left",((h / 2) - (destH / 2))+"px");
                 
         fullscreenHandler();
 };
