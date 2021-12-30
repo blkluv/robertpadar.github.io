@@ -92,7 +92,6 @@ function sizeHandler() {
             $("#canvas").css("height",destH+"px");
 
         }else{
-            canvas = document.getElementById('canvas');
             s_oStage.canvas.width = destW; //---original
             s_oStage.canvas.height = destH; //---original
 
@@ -100,9 +99,7 @@ function sizeHandler() {
             //s_oStage.canvas.height = rh;
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
-            console.log(s_iScaleFactor);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
-            console.log(s_oStage.scaleX);
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
