@@ -92,11 +92,11 @@ function sizeHandler() {
             $("#canvas").css("height",destH+"px");
 
         }else{
-            s_oStage.canvas.width = destW; //---original
-            s_oStage.canvas.height = destH; //---original
+            //s_oStage.canvas.width = destW; //---original
+            //s_oStage.canvas.height = destH; //---original
 
-            //s_oStage.canvas.width = w;
-            //s_oStage.canvas.height = h;
+            s_oStage.canvas.width = rw;
+            s_oStage.canvas.height = rh;
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             console.log(s_iScaleFactor);
