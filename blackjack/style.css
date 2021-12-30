@@ -20,3 +20,8 @@ canvas {
 		width: 90%;
 	}
 }
+@media screen and (orientation: landscape) {
+	#canvas {
+		width: 80%;
+	}
+}
