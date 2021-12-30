@@ -100,19 +100,26 @@ function sizeHandler() {
             //s_oStage.canvas.width = destW; //---original
             //s_oStage.canvas.height = destH; //---original
 
-            s_oStage.canvas.width = w;
-            s_oStage.canvas.height = h;
+            //s_oStage.canvas.width = w;
+            //s_oStage.canvas.height = h;
 
             //console.log(destW);
             //console.log(destH);
             //console.log(w);
             //console.log(h);
 
-            s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
-            console.log(s_iScaleFactor);
-            s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
-            console.log(s_oStage.scaleX);
-
+            //s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+            //console.log(s_iScaleFactor);
+            //s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
+            //console.log(s_oStage.scaleX);
+            canvas = document.getElementById('canvas');
+            s_oStage.canvas.width = destW*2;
+            s_oStage.canvas.height = destH*2;
+            canvas.style.width = destW+"px";
+            canvas.style.height = destH+"px";
+            var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+            s_iScaleFactor = iScale*2;
+            s_oStage.scaleX = s_oStage.scaleY = iScale*2;
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
