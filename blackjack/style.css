@@ -10,7 +10,7 @@ canvas {
 	background-size: cover;
 	border: 1px solid #000;
 }
-@media only screen and (max-width: 770px) and (min-width: 440px) {
+@media only screen and (max-width: 770px) {
 	#canvas {
 		width: 80%;
 	}
