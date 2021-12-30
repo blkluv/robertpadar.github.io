@@ -75,7 +75,9 @@ function sizeHandler() {
 	var destH = rh * multiplier;
     console.log(destW);
     console.log(destH);
-	
+	console.log(w);
+    console.log(h);
+
 		if(s_bIsIphone){
             canvas = document.getElementById('canvas');
             s_oStage.canvas.width = destW*2;
@@ -94,7 +96,9 @@ function sizeHandler() {
 
             console.log(destW);
             console.log(destH);
-            
+            console.log(w);
+            console.log(h);
+
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor; 
         }
