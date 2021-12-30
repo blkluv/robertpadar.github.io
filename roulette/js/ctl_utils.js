@@ -94,7 +94,7 @@ function sizeHandler() {
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor; 
         }
 		
-		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
+		$("#canvas").css("width",((w / 2) - (destW / 2))+"px");
                 
         fullscreenHandler();
 };
