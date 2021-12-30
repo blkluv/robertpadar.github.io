@@ -73,7 +73,9 @@ function sizeHandler() {
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
 	var destH = rh * multiplier;
-	
+	var newHtml2 = '<h2>mobile device</h2>';
+	var newHtml = '<h2>iphone device</h2>';
+
 		if(s_bIsIphone){
             canvas = document.getElementById('canvas');
             s_oStage.canvas.width = destW*2;
@@ -83,10 +85,14 @@ function sizeHandler() {
             var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_iScaleFactor = iScale*2;
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
+            document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml);
+
         }else if(s_bMobile && isIOS() === false){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
         }else if(s_bMobile){
+            document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml2);
+            
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
 
