@@ -22,6 +22,6 @@ canvas {
 }
 @media screen and (orientation: landscape) {
 	#canvas {
-		width: 85%;
+		height: 90%;
 	}
 }
