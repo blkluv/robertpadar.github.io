@@ -93,8 +93,8 @@ function sizeHandler() {
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
             
-            $("#canvas").css("width",destW+"px");
-            $("#canvas").css("height",destH+"px");
+            $("#canvas").css("width",rw+"px");
+            $("#canvas").css("height",rh+"px");
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
