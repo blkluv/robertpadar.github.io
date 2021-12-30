@@ -97,6 +97,9 @@ function sizeHandler() {
             console.log(h);
 
         }else{
+            //s_oStage.canvas.width = destW; //---original
+            //s_oStage.canvas.height = destH; //---original
+
             s_oStage.canvas.width = w;
             s_oStage.canvas.height = h;
 
