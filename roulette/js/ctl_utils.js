@@ -69,12 +69,10 @@ function sizeHandler() {
 	var h = window.innerHeight;
         
         _checkOrientation(w,h);
-        console.log(rw);
+        
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
 	var destH = rh * multiplier;
-	var newHtml2 = '<h2>mobile device</h2>';
-	var newHtml = '<h2>iphone device</h2>';
 
 		if(s_bIsIphone){
             canvas = document.getElementById('canvas');
