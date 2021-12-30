@@ -69,7 +69,7 @@ function sizeHandler() {
 	var h = window.innerHeight;
         
         _checkOrientation(w,h);
-        
+
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
 	var destH = rh * multiplier;
@@ -83,7 +83,6 @@ function sizeHandler() {
             var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_iScaleFactor = iScale*2;
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
-            console.log('iphone');
 
         }else if(s_bMobile && isIOS() === false){
             canvas = document.getElementById('canvas');
@@ -94,14 +93,10 @@ function sizeHandler() {
             var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_iScaleFactor = iScale*2;
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
-            console.log('desktop2');
-            console.log(destW);
-            console.log(destH);
 
         }else if(s_bMobile == true){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
-            console.log('mobile');
 
         }else{
             s_oStage.canvas.width = destW;
@@ -109,7 +104,6 @@ function sizeHandler() {
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
-            console.log('desktop');
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
