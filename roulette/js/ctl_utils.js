@@ -92,6 +92,8 @@ function sizeHandler() {
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
             console.log('desktop2');
+            console.log(destW);
+            console.log(destH);
 
         }else if(s_bMobile){
             document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml2);
@@ -106,7 +108,6 @@ function sizeHandler() {
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
             console.log('desktop');
-            trace(s_bMobile);
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
