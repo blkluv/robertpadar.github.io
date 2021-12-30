@@ -73,6 +73,8 @@ function sizeHandler() {
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
 	var destH = rh * multiplier;
+    console.log(destW);
+    console.log(destH);
 	
 		if(s_bIsIphone){
             canvas = document.getElementById('canvas');
