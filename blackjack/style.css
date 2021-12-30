@@ -20,8 +20,3 @@ canvas {
 		width: max-content;
 	}
 }
-@media (orientation: landscape) {
-	#canvas {
-		width: 100%;
-	}
-}
