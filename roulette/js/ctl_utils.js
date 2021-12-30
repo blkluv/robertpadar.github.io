@@ -93,11 +93,8 @@ function sizeHandler() {
         }else if(s_bMobile){
             document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml2);
             
-            s_oStage.canvas.width = destW;
-            s_oStage.canvas.height = destH;
-
-            s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
-            s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
+            $("#canvas").css("width",destW+"px");
+            $("#canvas").css("height",destH+"px");
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
