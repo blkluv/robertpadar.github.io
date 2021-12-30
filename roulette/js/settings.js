@@ -1,5 +1,5 @@
-//var CANVAS_WIDTH = 750;
-//var CANVAS_HEIGHT = 600;
+var CANVAS_WIDTH = 750;
+var CANVAS_HEIGHT = 600;
 
 var FPS_TIME      = 1000/24;
 var DISABLE_SOUND_MOBILE = false;
