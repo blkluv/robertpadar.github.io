@@ -95,6 +95,8 @@ function sizeHandler() {
             s_oStage.canvas.width = destW; //---original
             s_oStage.canvas.height = destH; //---original
 
+            canvas.style.width = destW+"px";
+            canvas.style.height = destH+"px";
             //s_oStage.canvas.width = rw;
             //s_oStage.canvas.height = rh;
 
