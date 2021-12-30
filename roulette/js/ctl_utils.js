@@ -104,8 +104,7 @@ function sizeHandler() {
             console.log(s_oStage.scaleX);
         }
 		
-		//$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
-		$("#canvas").css("left",((h / 2) - (destH / 2))+"px");
+		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
                 
         fullscreenHandler();
 };
