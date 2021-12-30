@@ -67,8 +67,8 @@ function sizeHandler() {
 	var rh = CANVAS_HEIGHT;
 	var w = window.innerWidth;
 	var h = window.innerHeight;
-        _checkOrientation(w,h);   //---original
-        //_checkOrientation(rw,rh);
+        //_checkOrientation(w,h);   //---original
+        _checkOrientation(rw,rh);
         
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
