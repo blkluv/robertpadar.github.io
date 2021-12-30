@@ -95,6 +95,7 @@ function sizeHandler() {
             
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
+            console.log('true');
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
