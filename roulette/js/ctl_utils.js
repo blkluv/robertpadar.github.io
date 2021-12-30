@@ -90,9 +90,6 @@ function sizeHandler() {
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
 
-            canvas.style.width = destW+"px";
-            canvas.style.height = destH+"px";
-
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
             
