@@ -85,5 +85,10 @@ canvas {
          url('arialbd-webfont.svg#arialbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+@media only screen and (max-width: 768px) {
+    #canvas {
+        width: 80%;
+        height: auto;
+    }
 }
