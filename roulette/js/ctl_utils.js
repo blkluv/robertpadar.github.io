@@ -100,10 +100,10 @@ function sizeHandler() {
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
 
-            console.log(destW);
-            console.log(destH);
-            console.log(w);
-            console.log(h);
+            //console.log(destW);
+            //console.log(destH);
+            //console.log(w);
+            //console.log(h);
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor; 
