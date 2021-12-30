@@ -36,7 +36,7 @@ function isIOS() {
         } 
     } 
     s_bIsIphone = false;
-
+    trace();
     return false; 
 }
 
