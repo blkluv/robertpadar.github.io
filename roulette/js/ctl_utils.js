@@ -73,8 +73,8 @@ function sizeHandler() {
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
 	var destH = rh * multiplier;
-	var newHtml2 = '<h2>mobile device</h2>';
-	var newHtml = '<h2>iphone device</h2>';
+	var newHtml2 = '<h2 style="display: inline!important;">mobile device</h2>';
+	var newHtml = '<h2 style="display: inline!important;">iphone device</h2>';
 
 		if(s_bIsIphone){
             canvas = document.getElementById('canvas');
