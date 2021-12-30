@@ -106,7 +106,10 @@ function sizeHandler() {
             //console.log(h);
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
-            s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor; 
+            console.log(s_iScaleFactor);
+            s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
+            console.log(s_oStage.scaleX);
+
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
