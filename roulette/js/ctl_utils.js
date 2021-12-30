@@ -87,15 +87,15 @@ function sizeHandler() {
             var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_iScaleFactor = iScale*2;
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
-            
+        }else if(s_bMobile && isIOS() === false){
+            $("#canvas").css("width",destW+"px");
+            $("#canvas").css("height",destH+"px");
+
             console.log(destW);
             console.log(destH);
             console.log(w);
             console.log(h);
-
-        }else if(s_bMobile && isIOS() === false){
-            $("#canvas").css("width",destW+"px");
-            $("#canvas").css("height",destH+"px");
+            
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
