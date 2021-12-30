@@ -85,22 +85,26 @@ function sizeHandler() {
             var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_iScaleFactor = iScale*2;
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
-            document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml);
             console.log('iphone');
 
         }else if(s_bMobile && isIOS() === false){
-            $("#canvas").css("width",destW+"px");
-            $("#canvas").css("height",destH+"px");
+            canvas = document.getElementById('canvas');
+            s_oStage.canvas.width = destW*2;
+            s_oStage.canvas.height = destH*2;
+            canvas.style.width = destW+"px";
+            canvas.style.height = destH+"px";
+            var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+            s_iScaleFactor = iScale*2;
+            s_oStage.scaleX = s_oStage.scaleY = iScale*2;
             console.log('desktop2');
             console.log(destW);
             console.log(destH);
 
-        }else if(s_bMobile){
-            document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml2);
-            
+        }else if(s_bMobile == true){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
             console.log('mobile');
+
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
