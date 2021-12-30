@@ -86,6 +86,12 @@ function sizeHandler() {
         }else if(s_bMobile && isIOS() === false){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
+        }else if(s_bMobile){
+            s_oStage.canvas.width = destW;
+            s_oStage.canvas.height = destH;
+
+            s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+            s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
