@@ -68,7 +68,7 @@ function sizeHandler() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
         
-        _checkOrientation(w,h);
+        _checkOrientation(rw,rh);
         
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
