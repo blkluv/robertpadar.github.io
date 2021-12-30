@@ -69,7 +69,7 @@ function sizeHandler() {
 	var h = window.innerHeight;
         
         _checkOrientation(w,h);
-        
+        console.log(rw);
 	multiplier = Math.min((h / rh), (w / rw));
 	var destW = rw * multiplier;
 	var destH = rh * multiplier;
@@ -86,22 +86,26 @@ function sizeHandler() {
             s_iScaleFactor = iScale*2;
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
             document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml);
+            console.log('iphone');
 
         }else if(s_bMobile && isIOS() === false){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
+            console.log('desktop2');
+
         }else if(s_bMobile){
             document.getElementById('block_game').insertAdjacentHTML("beforebegin", newHtml2);
             
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
-            console.log('true');
+            console.log('mobile');
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
+            console.log('desktop');
             trace(s_bMobile);
         }
 		
