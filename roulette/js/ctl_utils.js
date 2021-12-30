@@ -98,6 +98,7 @@ function sizeHandler() {
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
+        console.log((w / 2) - (destW / 2));
                 
         fullscreenHandler();
 };
