@@ -82,7 +82,8 @@ function sizeHandler() {
             canvas.style.height = destH+"px";
             var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_iScaleFactor = iScale*2;
-            s_oStage.scaleX = s_oStage.scaleY = iScale*2;  
+            s_oStage.scaleX = s_oStage.scaleY = iScale*2;
+            trace(s_bIsIphone);
         }else if(s_bMobile && isIOS() === false){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
@@ -93,7 +94,7 @@ function sizeHandler() {
 
             s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
             s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
-            
+            trace(isIOS);
         }
 		
 		$("#canvas").css("left",((w / 2) - (destW / 2))+"px");
