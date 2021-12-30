@@ -36,7 +36,7 @@ function isIOS() {
         } 
     } 
     s_bIsIphone = false;
-    trace(s_bIsIphone);
+
     return false; 
 }
 
@@ -86,6 +86,7 @@ function sizeHandler() {
         }else if(s_bMobile && isIOS() === false){
             $("#canvas").css("width",destW+"px");
             $("#canvas").css("height",destH+"px");
+            trace(s_bMobile);
         }else{
             s_oStage.canvas.width = destW;
             s_oStage.canvas.height = destH;
