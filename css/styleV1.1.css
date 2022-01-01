@@ -32,7 +32,6 @@ body .nav-cont .footer-menu-title{
 }
 
 #footer_container .menu li{
-    float: left !important;
     display: inline-block !important;
     margin-bottom:0px !important;
 }
