@@ -774,7 +774,7 @@
                             <li id="menu-item-5220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5220"><a href="https://robertpadar.github.io/play.html">Games</a></li>
                             <li id="menu-item-5217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="https://robertpadar.github.io/play.html">VIP</a></li>
                             <li id="menu-item-5219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5219"><a href="https://robertpadar.github.io/play.html">Banking</a></li>
-                            <li id="menu-item-5440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5440"><a href="https://robertpadar.github.io/play.html">Contact Us</a></li>
+                            <li id="menu-item-5440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5440"><a style="cursor: pointer;" onclick="contact();">Contact Us</a></li>
                             <li id="menu-item-5441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5441"><a href="https://robertpadar.github.io/play.html">About us</a></li>
                             <li id="lang_bar" class="menu-item menu-item-type-post_type menu-item-object-page lang_bar">
                                 <a id="currentLanguage" href="">
@@ -820,46 +820,14 @@
             </div>
             <div id="gamePlay">
                 <div id="playField" frameborder="0">
-                    <div id="contactUs" class="col-lg-6 contactUs">
-                        <form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform()">
-                          <div class="row gy-3">
-          
-                            <div class="col-lg-6">
-                              <div class="form-group contact-block1">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                              </div>
-                            </div>
-          
-                            <div class="col-lg-6">
-                              <div class="form-group">
-                                <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                              </div>
-                            </div>
-          
-                            <div class="col-lg-12">
-                              <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-                              </div>
-                            </div>
-          
-                            <div class="col-lg-12">
-                              <div class="form-group">
-                                <textarea class="form-control" name="message" id="message" placeholder="Message" required=""></textarea>
-                              </div>
-                            </div>
-          
-                            <div class="col-lg-12">
-                              <div class="loading"></div>
-                              <div class="error-message"></div>
-                              <div class="sent-message"></div>
-                            </div>
-          
-                            <div class="mt-0">
-                              <input id="submit" type="submit" class="btn btn-defeault btn-send" value="Send message">
-                            </div>
-                            <span id="sucessMessage"> </span>
-                          </div>
-                        </form>
+                    <div id="contactUs">
+                        <table class="table">
+                            <tr>
+                                <th>
+                                    <td></td>
+                                </th>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
