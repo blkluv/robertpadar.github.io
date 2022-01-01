@@ -258,6 +258,16 @@
                 justify-content: flex-end;
                 padding-right: 320px;
             }
+            #contactUs div input{
+                margin-right: 200px;
+                width: 400px;
+                align-content: center;
+            }
+            #contactUs div textarea {
+                margin-right: 200px;
+                width: 400px!important;
+                align-content: center
+            }
             iframe {
                 top: 150px; 
                 width: 1000px; 
@@ -502,6 +512,16 @@
                     width: 560px;
                     height: auto;
                 }
+                #contactUs div input{
+                    margin-right: 100px;
+                    width: 300px;
+                    align-content: center;
+                }
+                #contactUs div textarea {
+                    margin-right: 100px;
+                    width: 300px!important;
+                    align-content: center
+                }
             }
             @media only screen and (max-width: 900px) {
                 #payment_methods {
@@ -541,6 +561,16 @@
                     padding-top: 80px!important;
                     padding-right: 100px!important;
                 }
+                #contactUs div input{
+                    margin-right: 50px;
+                    width: 300px;
+                    align-content: center;
+                }
+                #contactUs div textarea {
+                    margin-right: 50px;
+                    width: 300px!important;
+                    align-content: center
+                }
                 #main-menu {
                     margin-left: 60px;
                 }
@@ -553,6 +583,16 @@
                 #canvas {
                     width: 260px;
                     height: auto;
+                }
+                #contactUs div input{
+                    margin-right: 20px;
+                    width: 200px;
+                    align-content: center;
+                }
+                #contactUs div textarea {
+                    margin-right: 20px;
+                    width: 200px!important;
+                    align-content: center
                 }
             }
             @media only screen and (max-width: 545px) {
@@ -821,6 +861,44 @@
             <div id="gamePlay">
                 <div id="playField" frameborder="0">
                     <div id="contactUs">
+                        <form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform()">
+                            <div>
+                              <div>
+                                <div>
+                                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                                </div>
+                              </div>
+            
+                              <div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                                </div>
+                              </div>
+            
+                              <div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                                </div>
+                              </div>
+            
+                              <div>
+                                <div class="form-group">
+                                  <textarea class="form-control" name="message" id="message" placeholder="Message" required=""></textarea>
+                                </div>
+                              </div>
+            
+                              <div>
+                                <div class="loading"></div>
+                                <div class="error-message"></div>
+                                <div class="sent-message"></div>
+                              </div>
+            
+                              <div>
+                                <input id="submit" type="submit" class="btn btn-defeault btn-send" value="Send message">
+                              </div>
+                              <span id="sucessMessage"> </span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
