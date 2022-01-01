@@ -94,7 +94,8 @@ function CMenu(){
     };
     
 	this._onCredits = function(){
-        _oCreditsPanel = new CCreditsPanel();
+        //_oCreditsPanel = new CCreditsPanel();
+        history.back();
     };
 	
     this.resetFullscreenBut = function(){
