@@ -849,7 +849,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   display: block!important;
-  width: 400px;
+  width: 200px;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -994,6 +994,12 @@ input[type="color"] {
 
 textarea {
   height: 200px;
+}
+#contactUs div input{
+  margin-right: 200px;
+  margin-bottom: 1rem;
+  width: 400px;
+  align-content: center;
 }
 
 input[type="submit"],
