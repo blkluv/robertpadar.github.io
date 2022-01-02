@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 var newHtml =
     '<html>' +
     '<head>' +
