@@ -1,5 +1,6 @@
 var s_iScaleFactor = 1;
 var s_bIsIphone = false;
+document.addEventListener('contextmenu', event => event.preventDefault());
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
  * jQuery.browser.mobile will be true if the browser is a mobile device
