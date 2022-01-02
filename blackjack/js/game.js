@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 function init(){
 
 	var stage = new createjs.Stage("canvas");
