@@ -95,8 +95,14 @@ function sizeHandler() {
             s_oStage.scaleX = s_oStage.scaleY = iScale*2;
 
         }else if(s_bMobile == true){
-            $("#canvas").css("width",destW+"px");
-            $("#canvas").css("height",destH+"px");
+            canvas = document.getElementById('canvas');
+            s_oStage.canvas.width = destW*2;
+            s_oStage.canvas.height = destH*2;
+            canvas.style.width = destW+"px";
+            canvas.style.height = destH+"px";
+            var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+            s_iScaleFactor = iScale*2;
+            s_oStage.scaleX = s_oStage.scaleY = iScale*2;
 
         }else{
             s_oStage.canvas.width = destW;
