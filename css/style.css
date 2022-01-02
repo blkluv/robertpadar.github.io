@@ -1122,6 +1122,42 @@ input[type="button"] {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 950px) {
+  #contactUs div input{
+      margin-right: 100px;
+      width: 300px;
+      align-content: center;
+  }
+  #contactUs div textarea {
+      margin-right: 100px;
+      width: 300px!important;
+      align-content: center
+  }
+}
+@media only screen and (max-width: 645px) {
+  #contactUs div input{
+      margin-right: 50px;
+      width: 300px;
+      align-content: center;
+  }
+  #contactUs div textarea {
+      margin-right: 50px;
+      width: 300px!important;
+      align-content: center
+  }
+}
+@media only screen and (max-width: 575px) {
+  #contactUs div input{
+      margin-right: 20px;
+      width: 200px;
+      align-content: center;
+  }
+  #contactUs div textarea {
+      margin-right: 20px;
+      width: 200px!important;
+      align-content: center
+  }
+}
 /*--------------------------------------------------------------
  5.0 Main
 --------------------------------------------------------------*/
