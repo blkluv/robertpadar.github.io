@@ -106,7 +106,7 @@ function CMenu(){
     };
 	
     this._onInfo = function(){
-        window.open("http://www.codethislab.com/index.php?&l=en","_blank");
+        window.open("https://en.wikipedia.org/wiki/Roulette","_blank");
     }
 
     this.resetFullscreenBut = function(){
