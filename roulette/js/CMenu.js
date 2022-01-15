@@ -31,7 +31,14 @@ function CMenu(){
         }else{
             _pStartPosFullscreen = {x:10 + oSprite.width/2,y:(oSprite.height / 2) + 10};
         }
-		
+
+        var oInfo = s_oSpriteLibrary.getSprite('information');
+        if(SHOW_CREDITS){
+            _pStartPosInfo = {x:10 + (oInfo.width / 2) + 101, y:(oInfo.height / 2) + 11};
+            _oCretitsInfo = new CGfxButton(_pStartPosInfo.x, _pStartPosInfo.y, oInfo, s_oStage);
+            _oCretitsInfo.addEventListener(ON_MOUSE_UP, this._onInfo, this);
+        }
+
         var doc = window.document;
         var docEl = doc.documentElement;
         _fRequestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
@@ -98,6 +105,10 @@ function CMenu(){
         history.back();
     };
 	
+    this._onInfo = function(){
+        window.open("http://www.codethislab.com/index.php?&l=en","_blank");
+    }
+
     this.resetFullscreenBut = function(){
 	if (_fRequestFullScreen && screenfull.enabled){
 		_oButFullscreen.setActive(s_bFullscreen);

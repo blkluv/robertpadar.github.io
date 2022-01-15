@@ -123,6 +123,7 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("but_game_small","./sprites/but_game_small.png");
         s_oSpriteLibrary.addSprite("but_fullscreen","./sprites/but_fullscreen.png");
 		s_oSpriteLibrary.addSprite("but_credits","./sprites/but_credits.png");
+        s_oSpriteLibrary.addSprite("information","./sprites/information.png");
 		s_oSpriteLibrary.addSprite("logo_ctl","./sprites/logo_ctl.png");
         
         for(var i=0;i<NUM_FICHES;i++){
