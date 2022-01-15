@@ -102,7 +102,7 @@ function CMenu(){
     
 	this._onCredits = function(){
         //_oCreditsPanel = new CCreditsPanel();
-        history.back();
+        window.location.href = "../play.html";
     };
 	
     this._onInfo = function(){
