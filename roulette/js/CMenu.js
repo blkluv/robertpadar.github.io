@@ -106,7 +106,7 @@ function CMenu(){
     };
 	
     this._onInfo = function(){
-        window.open("https://en.wikipedia.org/wiki/Roulette","_blank");
+        window.open("./info.html","_blank");
     }
 
     this.resetFullscreenBut = function(){
