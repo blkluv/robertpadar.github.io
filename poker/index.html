@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texas Holdem</title>
+	<link rel="stylesheet" href="..//blackjack/style.css">
+	<link rel="icon" href="../blackjack/assets/PNG/Cards/cardClubsJ.png" type="image/png" />
+	<script>
+		function goHomePage() {
+			window.location.href = "../play.html";
+		}
+        document.addEventListener('contextmenu', event => event.preventDefault());
+	</script>
+	<style>
+		#navigation {
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+		#navigation div {
+			padding-left: 10px;
+		}
+        @media only screen and (max-width: 1030px) {
+            body img {
+                width: 90%;
+            }
+        }
+	</style>
+    </head>
+    <body>
+        <img src="../img/istockphoto-1279537022-170667a.jpg" alt="coming">
+
+        <div id="navigation">	
+            <div>
+                <a class="github-button" href="https://github.com/robertpadar/robertpadar.github.io" data-icon="octicon-star" data-style="mega" aria-label="Star Oli8/BlackJackJs on GitHub">Star</a>
+            </div>
+            <div>
+                <button style="cursor: pointer;" class="github-button" onclick="goHomePage()" data-icon="octicon-star" data-style="mega" aria-label="Star Oli8/BlackJackJs on GitHub">Home</button>
+                
+            </div>
+            <div>
+                <button style="cursor: pointer;" class="github-button"><a href="#">Info</a></button>
+            </div>
+        </div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </body>
+</html>
