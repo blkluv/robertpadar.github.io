@@ -378,7 +378,7 @@
                 }
                 #header_section {
                     height: 6vw!important;
-                    background-color: rgb(0, 0, 0);
+                    background-color: rgb(0, 0, 0)!important;
                     position: relative;
                     padding-bottom: 30px;
                 }
@@ -387,7 +387,7 @@
                 }
                 #header_section a {
                     float: left;
-                    color: white;
+                    color: rgb(255, 255, 255)!important;
                     padding: 10px 12px;
                     text-decoration: none;
                     font-size: 17px;
@@ -402,12 +402,12 @@
                     top: 0;
                 }
                 #header_section a:hover {
-                    background-color: #ddd;
+                    /*background-color: #ddd;*/
                     color: black;
                 }
                 .active {
                     background-color: #04AA6D;
-                    color: white;
+                    color: rgb(0, 0, 0);
                 }
                 footer #payment_methods, #terms{
                     right: 0px!important;
@@ -452,7 +452,7 @@
                 }
                 #header_section a {
                     float: left;
-                    color: white;
+                    color: rgb(0, 0, 0);
                     padding: 10px 12px;
                     text-decoration: none;
                     font-size: 17px;
@@ -467,12 +467,12 @@
                     top: 0;
                 }
                 #header_section a:hover {
-                    background-color: #ddd;
+                    /*background-color: #ddd;*/
                     color: black;
                 }
                 .active {
                     background-color: #04AA6D;
-                    color: white;
+                    color: rgb(0, 0, 0);
                 }
             }
             @media only screen and (max-width: 1070px) {
@@ -488,6 +488,9 @@
                 }
                 #main-menu li a {
                     font-size: 10px!important;
+                }
+                .column {
+                    width: 40%;
                 }
             }
             @media only screen and (max-width: 1025px) {
@@ -557,6 +560,15 @@
                     padding-top: 80px!important;
                     padding-right: 20px!important;
                 }
+                .row {
+                    width: 90%;
+                }
+                .row > .column {
+                    padding-left: 50px;
+                }
+                .column {
+                    width: 35%;
+                }
             }
             @media only screen and (max-width: 645px) {
                 .horizontal-elements svg {
@@ -588,6 +600,10 @@
                     width: 360px;
                     height: auto;
                 }
+                #banner {
+                    width: unset!important;
+                    margin-left: 0px!important;
+                }
             }
             @media only screen and (max-width: 575px) {
                 #canvas {
@@ -603,6 +619,16 @@
                     margin-right: 20px;
                     width: 200px!important;
                     align-content: center
+                }
+                .row {
+                    width: 100%;
+                    flex-wrap: nowrap!important;
+                }
+                .row > .column {
+                    padding-left: 0px;
+                }
+                .column {
+                    width: 40%;
                 }
             }
             @media only screen and (max-width: 545px) {
@@ -630,13 +656,10 @@
                     padding-right: 20px!important;
                 }
                 #banner {
-                    display: none;
+                    display: none!important;
                 }
             }
             @media only screen and (max-width: 900px) and (orientation: landscape) {
-                #banner {
-                    display: none!important;
-                }
                 #donate {
                     margin-top: 90px;
                     position: fixed;
