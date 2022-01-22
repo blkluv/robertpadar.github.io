@@ -449,7 +449,7 @@ span.mainBannerArrow.right:hover {
         top: 0;
     }
     #header_section a:hover {
-        background-color: #ddd;
+        /*background-color: #ddd;*/
         color: black;
     }
     .active {
@@ -542,7 +542,7 @@ span.mainBannerArrow.right:hover {
         top: 0;
     }
     #header_section a:hover {
-        background-color: #ddd;
+        /*background-color: #ddd;*/
         color: black;
     }
     .active {
