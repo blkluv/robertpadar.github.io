@@ -466,6 +466,14 @@ hr {
   display: none;
   left: 25%;
 }
+
+aside {
+  top: 120px;
+  text-align: center;
+  color: #ffffff;
+  font-size: medium;
+}
+
 @media only screen and (max-width: 991px) {
   .contactUs {
     width: 70%;
