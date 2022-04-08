@@ -33,6 +33,17 @@
                 top:0;
                 width:100%
             }
+            #background-video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
             input {
                 display: block;
                 width: 100px;
@@ -64,12 +75,12 @@
                 width: 80%!important;
             }
             #header  {
-                background: #000;
+                /*background: #000;
                 background: -moz-linear-gradient(top,#000 0,#000 100%);
                 /* background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#000),color-stop(100%,#000)); */
-                /* background: -webkit-linear-gradient(top,#000 0,#000 100%); */
+                /* background: -webkit-linear-gradient(top,#000 0,#000 100%); 
                 background: -o-linear-gradient(top,#000 0,#000 100%);
-                background: -ms-linear-gradient(top,#000 0,#000 100%);
+                background: -ms-linear-gradient(top,#000 0,#000 100%);*/
                 /* background: linear-gradient(to bottom,#000 0,#000 100%); */
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black',endColorstr='black',GradientType=0);
                 align-self: auto;
@@ -821,6 +832,10 @@
             </div>
         </div>
         <div id="rightpanel" class="marquee-shown">
+            <!--<video id="wistia_simple_video_110" crossorigin="anonymous" poster="https://fast.wistia.com/assets/images/blank.gif" aria-label="Video" src="https://embedwistia-a.akamaihd.net/deliveries/b06ad54f5c1c1c7978a9b7735624a20e585a72ca/file.mp4" controlslist="nodownload" playsinline="" muted="muted" loop="" preload="none" type="video/mp4" x-webkit-airplay="allow" style="background: transparent; display: block; height: 100%; max-height: none; max-width: none; position: static; visibility: visible; width: 100%; object-fit: fill;"><source src="https://embedwistia-a.akamaihd.net/deliveries/b06ad54f5c1c1c7978a9b7735624a20e585a72ca/file.mp4" type="video/mp4"></video>-->
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="https://embedwistia-a.akamaihd.net/deliveries/b06ad54f5c1c1c7978a9b7735624a20e585a72ca/file.mp4" type="video/mp4">
+              </video>
             <div id="sandwichMenu">
                 <ul class="sandwich-menu nav nav-stacked" style="display: none;">
                     <li style="display: none;">
@@ -864,7 +879,7 @@
             </div>
             <div id="headerLogo"></div>
             <div id="gameViewHeaderContainer" style="visibility: hidden;"></div>
-            <div id="header_section">
+            <div id="header_section" style="background: transparent!important;">
                 <div id="site-branding">
                     <div id="logo">
                         <a href="https://robertpadar.github.io/play.html" rel="home" itemprop="url" title="Casino">
