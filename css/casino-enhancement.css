@@ -320,7 +320,7 @@ body.page-blocked #header_section, body.page-blocked #footer_container {
 #site-branding #logo {
     text-align: center;
 }
-#site-branding #logo img {
+#site-branding {
     width: unset;
 }
 #secondary-header .login-head, #secondary-header #menu-links, #menu-links li, .main-nav {
