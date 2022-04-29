@@ -556,6 +556,6 @@ span.mainBannerArrow.right:hover {
     #logo img {
         margin-top: -30px!important;
         padding-left: unset;
-        width: 200px;
+        width: 200px!important;
     }
 }
