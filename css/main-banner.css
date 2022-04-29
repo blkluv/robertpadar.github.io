@@ -554,8 +554,8 @@ span.mainBannerArrow.right:hover {
 }
 @media only screen and (max-width: 480px) {
     #logo img {
-        margin-top: -30px!important;
-        padding-left: unset;
+        margin-top: -10px!important;
+        /*padding-left: unset;*/
         width: 200px!important;
     }
 }
