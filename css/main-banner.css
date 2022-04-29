@@ -410,7 +410,7 @@ span.mainBannerArrow.right:hover {
     }
 }
 
-@media only screen and (max-width: 1226px) and (min-width: 1026px){
+@media only screen and (max-width: 1226px) {
     body {
         padding-top: 0px!important;
     }
@@ -550,5 +550,12 @@ span.mainBannerArrow.right:hover {
     .active {
         background-color: #04AA6D;
         color: white;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #logo img {
+        margin-top: -30px!important;
+        padding-left: unset;
+        width: 200px;
     }
 }
