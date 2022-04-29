@@ -409,16 +409,17 @@ span.mainBannerArrow.right:hover {
         background-repeat: no-repeat;
     }
 }
-
+@media only screen and (max-width: 1226px) and (min-width: 1026px) {
+    #logo img {
+        width: 400px!important;
+    }
+}
 @media only screen and (max-width: 1226px) {
     body {
         padding-top: 0px!important;
     }
     .ico {
         visibility: visible;
-    }
-    #logo img {
-        width: 400px!important;
     }
     #secondary-header a {
         font-size: 12px!important;
@@ -492,17 +493,19 @@ span.mainBannerArrow.right:hover {
         height: 125px;
     }
 }
+@media only screen and (max-width: 1025px) and (min-width: 481px) {
+    #logo img {
+        padding-left: 200px;
+        max-width: unset!important;
+        width: 500px!important;
+    }
+}
 @media only screen and (max-width: 1025px) {
     body {
         padding-top: 0px!important;
     }
     .ico {
         visibility: visible;
-    }
-    #logo img {
-        padding-left: 200px;
-        max-width: unset!important;
-        width: 500px!important;
     }
     #secondary-header a {
         font-size: 12px!important;
