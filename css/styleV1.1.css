@@ -1470,7 +1470,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
     #header_section {
         height: 17.5vw;
     }
-    #site-branding #logo img {
+    #site-branding {
         width: 45vw;
         margin-top: 0;
         max-width: none;
