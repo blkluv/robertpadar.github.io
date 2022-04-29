@@ -559,7 +559,7 @@ span.mainBannerArrow.right:hover {
     #logo img {
         /*margin-top: -10px!important;*/
         max-width: unset;
-        padding-left: 10px;
+        padding-left: -20px;
         width: 220px!important;
     }
 }
