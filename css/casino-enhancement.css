@@ -996,7 +996,7 @@ body.it.page-terms-conditions .wpb_wrapper .inner_text:nth-child(3) p:nth-child(
 		padding-right: 0px !important;
         position: absolute !important;
     }
-    #site-branding #logo img {
+    #site-branding {
         width: 35vw;
         max-width: 130px;
     }
