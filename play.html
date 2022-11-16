@@ -778,6 +778,9 @@
                     x.style.display = "block";
                 }
             }
+            function login() {
+                window.open("login/login.php");
+            }
         </script>
     </head>
     <body>
@@ -831,7 +834,7 @@
                     </svg>
                 </div>
                 <div class="vertical-elements">
-                    <div class="login" id="mainViewLoginBtn">Log In</div>
+                    <div class="login" id="mainViewLoginBtn" onclick="login()">Log In</div>
                     <div class="signup" id="mainViewSignUpBtn">Sign Up</div>
                     <div class="play-for-real" style="display: none;">Play for Real</div>
                     <div class="cashier" style="display: none;">Cashier</div>
