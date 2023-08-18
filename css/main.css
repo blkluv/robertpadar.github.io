@@ -730,6 +730,15 @@ section {
   border: 1px solid gray;
   border-radius: 18px;
 }
+.col-md-4 {
+    display: block;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 /*--------------------------------------------------------------
 # Why Choose Us Section
 --------------------------------------------------------------*/
