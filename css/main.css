@@ -711,6 +711,25 @@ section {
 #main > div > div.et_pb_row.et_pb_row_3 > div.et_pb_column.et_pb_column_1_3.et_pb_column_7.et_pb_css_mix_blend_mode_passthrough.et-last-child {
   padding-left: 0px;
 }
+.calculate {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.calculate img {
+  max-width: 1000px;
+  height: 470px;
+}
+.calculate button {
+  background-color: #215892;
+  color: #f8f8f8;
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 18px;
+}
 /*--------------------------------------------------------------
 # Why Choose Us Section
 --------------------------------------------------------------*/
