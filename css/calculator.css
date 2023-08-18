@@ -2685,6 +2685,10 @@ span.number {
     line-height: 26px
 }
 
+.credits a {
+    color: #337ab7;
+}
+
 @media (min-width: 992px) and (max-width:1024px) {
     .calculator__result input {
         width:100%!important
