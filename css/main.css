@@ -2200,8 +2200,8 @@ section {
 }
 
 .footer .footer-content .footer-info .logo img {
-  max-height: 250px;
-  margin-right: 150px;
+  max-height: 150px;
+  margin-right: 100px;
 }
 
 .footer .footer-content .footer-info .logo span {
@@ -2292,7 +2292,7 @@ section {
   color: var(--color-secondary);
 }
 
-#footer > div.footer-content > div > div > div.col-lg-3.col-md-12.footer-contact.text-center.text-md-start {
+.footer-contact ul {
   list-style-type: none;
 }
 
