@@ -2200,8 +2200,8 @@ section {
 }
 
 .footer .footer-content .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  max-height: 250px;
+  margin-right: 150px;
 }
 
 .footer .footer-content .footer-info .logo span {
@@ -2244,7 +2244,7 @@ section {
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #29486a;
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   padding-bottom: 12px;
 }
@@ -2277,7 +2277,7 @@ section {
 }
 
 .footer .footer-content .footer-links ul a {
-  color: #31547c;
+  color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2290,6 +2290,10 @@ section {
 .footer .footer-content .footer-contact p {
   line-height: 26px;
   color: var(--color-secondary);
+}
+
+#footer > div.footer-content > div > div > div.col-lg-3.col-md-12.footer-contact.text-center.text-md-start {
+  list-style-type: none;
 }
 
 .footer .footer-legal {
