@@ -1636,6 +1636,17 @@ section {
   }
 }
 
+.installers {
+  margin: 20px auto 80px auto;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+}
+
+.et_pb_text_inner p {
+  text-align: left;
+}
+
 /*--------------------------------------------------------------
 # Blog Stylings
 --------------------------------------------------------------*/
@@ -2210,6 +2221,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  clear: both;
+  display: block;
+  position: relative;
   font-size: 14px;
 }
 
