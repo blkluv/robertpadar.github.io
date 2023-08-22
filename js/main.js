@@ -196,3 +196,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* Leaflet map */
+
+var map = L.map('map').setView([-28, 133], 5);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+var marker = L.marker([-31.905, 115.815]).addTo(map)
+.bindPopup("<img style='width:298px; height:170px' src='/img/leaflet-2.jpg';>"+
+"<p><b>Premium Glass Pool Fencing</b><br><br><i class='bi bi-geo-alt'>&nbsp;&nbsp;57 Guthrie St, Osborne Park WA 6017,"+
+" Ausztrália</i><br><br><i class='bi bi-globe-asia-australia'>&nbsp;&nbsp;<a href='https://premiumglasspoolfencing.com.au/'>"+
+"https://premiumglasspoolfencing.com.au/</a></i><br><br><i class='bi bi-telephone-fill'>&nbsp;&nbsp;+61864540272</i>");
+
+
+var marker = L.marker([-27.4773, 153.006]).addTo(map)
+.bindPopup("<img style='width:286px; height:170px' src='/img/leaflet-1.jpg';>"+
+"<p><b>Ambience Glass</b><br><br><i class='bi bi-geo-alt'>&nbsp;&nbsp;111 Jane St, West End QLD 4101,"+
+" Ausztrália</i><br><br><i class='bi bi-globe-asia-australia'>&nbsp;&nbsp;<a href='http://www.ambienceglass.com.au/'>"+
+"http://www.ambienceglass.com.au/</a></i><br><br><i class='bi bi-telephone-fill'>&nbsp;&nbsp;+61400814141</i>");
+
+
+var marker = L.marker([-33.67, 150.855]).addTo(map).bindPopup("<img style='width:298px; height:170px' src='/img/leaflet-3.jpg';>"+
+"<p><b>Glass & Fencing Warehouse</b><br><br><i class='bi bi-geo-alt'>&nbsp;&nbsp;Unit A11, Riverstone Business Park, 81 "+
+" Riverstone Parade, Riverstone NSW 2765, Ausztrália</i><br><br><i class='bi bi-globe-asia-australia'>&nbsp;&nbsp;<a href="+
+"'https://glassandfencingwarehouse.com.au/?utm_source=local&utm_medium=organic&utm_campaign=gmb'>https://glassandfencingwarehouse."+
+"com.au/?utm_source=local&utm_medium=organic&utm_ca...</a></i><br><br><i class='bi bi-telephone-fill'>&nbsp;&nbsp;+61296279500</i>");
+
+
+var marker = L.marker([-37.9257, 145.0044]).addTo(map).bindPopup("<img style='width:286px; height:170px' src='/img/leaflet-4.jpg';>"+
+"<p><b>Frameless Fences</b><br><br><i class='bi bi-geo-alt'>&nbsp;&nbsp;669 Hampton St, Brighton VIC 3186,"+
+" Ausztrália</i><br><br><i class='bi bi-globe-asia-australia'>&nbsp;&nbsp;<a href=''>"+
+"not found</a></i><br><br><i class='bi bi-telephone-fill'>&nbsp;&nbsp;+61412337771</i>");
+
