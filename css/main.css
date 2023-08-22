@@ -668,6 +668,14 @@ section {
 .et_pb_row .et_pb_column.et-last-child, .et_pb_row .et_pb_column:last-child, .et_pb_row_inner .et_pb_column.et-last-child, .et_pb_row_inner .et_pb_column:last-child {
     margin-right: 0!important;
 }}
+#shopping-heading {
+  display: flex;
+  max-width: unset;
+  padding-top: 40px;
+}
+.et_pb_text_inner h1 {
+  padding: 40px 40px;
+}
 .et_pb_column_3 {
   width: 500px;
   padding-left: 70px;
@@ -692,7 +700,42 @@ section {
   justify-content: space-between;
   height: 200px;
 }
-
+#shopping-site {
+  display: flex;
+}
+#process {
+  justify-content: space-around
+}
+.et_pb_module_header {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  aspect-ratio: 1/1;
+  max-width: 75px;
+  vertical-align: middle;
+  margin: 30px auto;
+  padding: 25px;
+  font-weight: 600;
+}
+.et_pb_button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.3em 1em;
+  line-height: 1.7em!important;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: 2px solid;
+  border-radius: 3px;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: all!important;
+  transition-property: all!important;
+}
+#marginHow {
+  height: 600px;
+  margin-bottom: 40px;
+}
 .et_pb_row_3.et_pb_row {
   padding-top: 30px!important;
   padding-right: 0!important;
@@ -1049,7 +1092,36 @@ section {
 .features .details .btn-get-started:hover {
   background: #2aa5df;
 }
+.et_pb_section {
+  clear: both;
+  display: block;
+  position: relative;
+}
+.et_pb_section_0 {
+  margin: 20px auto 80px auto;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+}
 
+.et_pb_section_1 {
+  margin: 20px auto 80px auto;
+  height: 900px;
+  align-items: center;
+  text-align: center;
+  background-color: white!important;
+  color: #121010;
+}
+
+#howItWorks {
+  background-color: white!important;
+  height: 600px;
+  color: #181616;
+  text-align: left;
+}
+#lookingFor {
+  height: 300px;
+}
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
