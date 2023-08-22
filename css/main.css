@@ -2261,7 +2261,7 @@ section {
 
 .footer .footer-content .footer-links ul i {
   margin-right: 2px;
-  color: var(--color-primary);
+  color: var(--color-gray);
   font-size: 16px;
   line-height: 0;
 }

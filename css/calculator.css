@@ -610,6 +610,10 @@ a {
     color: rgba(255, 255, 255, 0.6)
 }
 
+#bootstrapMade {
+    color: #272727;
+}
+
 p {
     font-size: 15px;
     line-height: 22px;
