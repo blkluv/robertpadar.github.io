@@ -1103,7 +1103,9 @@ section {
   align-items: center;
   text-align: center;
 }
-
+.et_pb_row_00 {
+  padding-top: 40px;
+}
 .et_pb_section_1 {
   margin: 20px auto 80px auto;
   height: 900px;
@@ -1121,6 +1123,29 @@ section {
 }
 #lookingFor {
   height: 300px;
+}
+.et_section_regular11 {
+  text-align: left;
+  height: 1100px;
+  margin: 60px;
+  color: #181616;
+  background-color: white!important;
+}
+.et_pb_image_wrap2 img {
+  margin: 40px;
+}
+.mode_passthrough {
+  text-align: center;
+  margin: 40px 40px;
+}
+.et_pb_section_012 {
+  height: 5650px;
+}
+.et_pb_row_2 {
+  height: 800px;
+}
+.p1 {
+  text-align: center!important;
 }
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
