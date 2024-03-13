@@ -582,7 +582,7 @@ document.getElementById('countrySelect').addEventListener('change', function(dat
 function userCountry(locate) {
     var lat = locate.lat;
     var lng = locate.lng;
-
+    console.log(lat);
     $.ajax({
         url: "php/setLocationSelected.php",
         type: 'POST',
