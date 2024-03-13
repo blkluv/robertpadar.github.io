@@ -18,6 +18,12 @@
         <script type="text/javascript" src="https://rawgit.com/CliffCloud/Leaflet.EasyButton/master/src/easy-button.js"></script>
         <script src="https://kit.fontawesome.com/89d66d1436.js" crossorigin="anonymous"></script>
         <script src="./js/leaflet.extra-markers.js"></script>
+        <script>
+            function myFunction() {
+                const element = document.getElementById('clear');
+                element.remove();
+            }
+        </script>
     </head>
     <body>
         <span id="selectContainer">
@@ -34,9 +40,9 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title">Overview</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div id="modal-body" class="modal-body">
                         <table class="table table-striped">
                             <tr>
                                 <td colspan="3" class="text-center">
@@ -121,7 +127,7 @@
                         </table>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -131,7 +137,7 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title">News</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="title0"></div><br>
@@ -141,10 +147,10 @@
                         <div class="links0"><a href="" class="link0"></a></div>
                         <div class="date0"></div>
                         <hr>
-                        <div class="secondary newsSecondary"></div>
+                        <div id="modal-body" class="secondary newsSecondary"></div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -154,7 +160,7 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title">Weather</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div id="weatherCityInfo">
@@ -173,7 +179,7 @@
                         <div class="secondary">
                             <div class="secondaryFlex">
                                 <div class="inline-flex">
-                                    <div class="first">
+                                    <div class="weatherfirst">
                                         <div class="weatherMainDate largeText"></div>
                                         <div class="weatherImage">
                                             <img id="weatherImg" class="weatherImg" src="" alt="">
@@ -203,7 +209,7 @@
                                     </div>
                                 </div><hr>
                                 <div class="inline-flex">
-                                    <div class="first">
+                                    <div class="weatherfirst">
                                         <div class="weatherMainDate1 largeText"></div>
                                         <div class="weatherImage">
                                             <img id="weatherImg" class="weatherImg1" src="" alt="">
@@ -233,7 +239,7 @@
                                     </div>
                                 </div><hr>
                                 <div class="inline-flex">
-                                    <div class="first">
+                                    <div class="weatherfirst">
                                         <div class="weatherMainDate2 largeText"></div>
                                         <div class="weatherImage">
                                             <img id="weatherImg" class="weatherImg2" src="" alt="">
@@ -263,7 +269,7 @@
                                     </div>
                                 </div><hr>
                                 <div class="inline-flex">
-                                    <div class="first">
+                                    <div class="weatherfirst">
                                         <div class="weatherMainDate3 largeText"></div>
                                         <div class="weatherImage">
                                             <img id="weatherImg" class="weatherImg3" src="" alt="">
@@ -293,7 +299,7 @@
                                     </div>
                                 </div><hr>
                                 <div class="inline-flex">
-                                    <div class="first">
+                                    <div class="weatherfirst">
                                         <div class="weatherMainDate4 largeText"></div>
                                         <div class="weatherImage">
                                             <img id="weatherImg" class="weatherImg4" src="" alt="">
@@ -345,7 +351,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -355,11 +361,11 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title">Wikipedia</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body wikiModal"></div>
+                    <div id="modal-body" class="modal-body wikiModal"></div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -369,9 +375,9 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title">Nasa news</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body nasaModalSearch">
+                    <div id="modal-body" class="modal-body nasaModalSearch">
                         <h5>Photo Of The Day!</h5>
                         <div class="photoOfTheDay">
                             <div class="image">
@@ -392,7 +398,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -402,7 +408,7 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title">Nasa: Mars Rover Photos</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="photoOfTheDay">
@@ -412,11 +418,10 @@
                             </div>
                             <button id="nasaRoverButton">Submit</button>
                         </div>
-                        <div class="nasaRoverPhotos">
-                        </div>
+                        <div id="modal-body" class="nasaRoverPhotos"></div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -426,11 +431,11 @@
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header bg-success bg-gradient text-white">
                         <h5 class="modal-title modal-food-title"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onclick="myFunction()" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body foodModalBody"></div>
+                    <div id="modal-body" class="modal-body foodModalBody"></div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
+                        <button onclick="myFunction()" type="button" class="btn btn-outline-success btn-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
