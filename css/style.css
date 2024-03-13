@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+#map {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.largeText {
+    font-size: 20px;
+}
+
+#selectContainer {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 11px 0;
+}
+  
+#countrySelect {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.madal-dialog, .come-from-modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 520px;
+    height: 90%;
+    transform: translate3d(0%, 0, 0);
+}
+
+.come-from-modal.right .modal-content {
+    height: 90%;
+    overflow-y: auto;
+    border-radius: 0px;
+}
+
+.come-from-modal.right .modal-body {
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+.come-from-modal.right.fade .modal-dialog {
+    right: 30px;
+    transition: opacity 0.3s linear, right 1s ease-in-out;
+}
+
+.come-from-modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+.secondaryFlex {
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+}
+
+.first {
+    margin: 5px;
+    width: 100%;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+.wikiFirst, .wikiSecond, .wikiThird, .wikiFourth, .wikiFifth,
+.photoOfTheDay {
+    width: 100%;
+    display: inline-flex;
+    font-size: 12px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.wikiData, .nasaDataFirst {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.nasaPhoto {
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.nasaTitle {
+    font-weight: bolder;
+}
+
+#modal-body {
+    overflow-y: unset;
+}
+
+#weather > div > div {
+    background-image: url(../images/pexels-johannes-plenio-1118873.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#weatherCityInfo {
+    display: inline-flex;
+    color: #f8f8f8;
+}
+
+.weatherCityInfo {
+    margin: 0px 20px 0px 50px;
+    float: right;
+}
+
+#weatherImg {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+#weather > div > div > div.modal-body > div.secondary {
+    color: #f8f8f8;
+}
+
+.margin-top {
+    margin-top: 40px;
+}
+
+#weather > div > div > div.modal-body > div.secondary > div:nth-child(1), .flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.nasaSearch > img {
+    margin: 20px 0px 20px 0px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.nasaRoverPhotos::after, .newsSecondary::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+  
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
