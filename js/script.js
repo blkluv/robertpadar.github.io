@@ -592,6 +592,7 @@ function userCountry(locate) {
             lng: lng,
         },
         success: function(result) {
+            console.log(result);
             iso3 += result['data']['countryCode'];
             $('#visible').html(result['data']['countryName']);
             getData(result['data']['countryCode']);
