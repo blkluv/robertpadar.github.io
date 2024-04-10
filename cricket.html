@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sports and casino games</title>
+    
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="/images/logo-col.svg" type="image/x-icon">
+    
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css.map">
+        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css.map">
+        <link rel="stylesheet" href="./vendor/bootstrap-icons/bootstrap-icons.css">
+        <link rel="stylesheet" href="./vendor/bootstrap-icons/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./vendor/bootstrap-icons/bootstrap-icons.scss">
+        <link rel="stylesheet" href="./vendor/bootstrap-icons/fonts/bootstrap-icons.woff">
+        <link rel="stylesheet" href="./vendor/bootstrap-icons/fonts/bootstrap-icons.woff2">
+        <link rel="stylesheet" href="./vendor/bootstrap-icons/bootstrap-icons.json">
+        
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <style>
+            .second-nav {
+                position: relative;
+                top: 40px;
+                height: 60px;
+                background-color: rgb(230, 196, 0);
+                align-items: inherit;
+                border: 2px solid #181111;
+                border-radius: 2px;
+                color: #181111;
+            }
+            .second-navigation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 40px;
+                margin: 10px 20px 10px 20px;
+            }
+            .second-list-style {
+                position: relative;
+                display: inline-flex;
+                font-size: 0.8em;
+                font-weight: bolder;
+                float: left;
+                font-size: 1em;
+            }
+            .second-second {
+                margin: 0px 10px 0px 10px;
+            }
+            .cricket, .upcoming {
+                clear: both;
+                position: relative;
+                height: 64px;
+                display: block;
+                background: linear-gradient(to right, rgb(121, 76, 34) 50%, rgb(53, 53, 53) 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .5s ease-out;
+                align-items: inherit;
+                border: 2px solid rgb(53, 53, 53);
+                border-radius: 2px;
+                color: #dfdede;
+                margin-top: 60px;
+            }
+            .cricket:hover, .upcoming:hover {
+                background-position: left bottom;
+            }
+            .playDate {
+                height: 40px;
+                width: 62px;
+                background-color: #7e7a7a;
+                color: #f8f8f8;
+                font-size: 0.7em;
+                margin-right: 20px;
+                border-radius: 8px;
+                text-align: center;
+                padding-top: 4px;
+            }
+            .cricket-inner {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 10px 10px;
+            }
+            .teams {
+                display: inline-flex;
+            }
+            .teamDisplay {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .typeOfMatch {
+                font-size: 0.7em;
+            }
+            footer {
+                margin: 80px 0px 0px 0px;
+            }
+            @keyframes fadeLeft {
+                to {left: 600px;}
+            }
+            #upcoming {
+                display: none;
+            }
+            .upcomingDiv button {
+                background-color: unset;
+                border: none;
+                font-weight: bold;
+            }
+            iframe {
+                margin-top: 60px;
+                height: 760px;
+            }
+        </style>
+        <script>
+            function upComing() {
+                var y = document.getElementById("cricket");
+                var x = document.getElementById("upcoming");
+                if(y.style.display === "none") {
+                    y.style.display = "block";
+                    x.style.display = "none";
+                } else {
+                    y.style.display = "none";
+                    x.style.display = "block";
+                }
+            }
+                 
+                    // Get the local time using JS
+                    var date = new Date;
+                    var seconds = date.getSeconds();
+                    var minutes = date.getMinutes();
+                    var hours = date.getHours();
+                    console.log(date, seconds, minutes, hours);
+                    $('#time').attr(date, hours, minutes, seconds);
+                
+            
+        </script>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <nav class="navigation">
+                <div class="list-style">
+                    <div class="options"><i class="bi bi-box-seam-fill"></i>Kheloyar Exch</div>
+                    <div class="options"><i class="bi bi-device-ssd"></i>Aviator</div>
+                    <div class="options"><i class="bi bi-alipay"></i>All Casino</div>
+                    <div class="options"><i class="bi bi-sina-weibo"></i>Live Casino</div>
+                    <div class="options"><i class="bi bi-valentine"></i>Teen Patti</div>
+                    <div class="options"><i class="bi bi-file-earmark-zip"></i>Table Game</div>
+                    <div class="options"><i class="bi bi-disc-fill"></i>Instant Win</div>
+                    <div class="options"><i class="bi bi-device-ssd-fill"></i>Shoopting Games</div>
+                    <div class="options"><i class="bi bi-motherboard-fill"></i>Virtual Sprots</div>
+                </div>
+            </nav>
+        </div>
+        <!--<div class="second-nav">
+            <nav class="second-navigation">
+                <div class="second-list-style">
+                    <div class="home second-second">Home</div>
+                    <div class="in-play second-second">In-Play</div>
+                    <div class="upcomingDiv second-second"><button onclick="upComing()">Upcoming</button></div>
+                </div>
+                <div id="time" class="time"></div>
+            </nav>
+        </div>
+        <section id="cricket">
+            <div class="cricket">
+                <div class="cricket-inner">
+                    <div class="playDate"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus"></div>
+                        </div>
+                        <div class="typeOfMatch"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="cricket">
+                <div class="cricket-inner">
+                    <div class="playDate playDate2"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first2"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus2"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch2"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="cricket">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Starts Upcoming section -->
+        <!--<section id="upcoming">
+            <div class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;" class="upcoming">
+                <div class="cricket-inner">
+                    <div class="playDate playDate3"></div>
+                    <div class="teamDisplay">
+                        <div class="teams">
+                            <div class="first first3"></div>
+                            <div>&nbsp;&nbsp;Vs&nbsp;&nbsp;</div>
+                            <div class="fistVersus fistVersus3"></div>
+                        </div>
+                        <div class="typeOfMatch typeOfMatch3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <iframe _ngcontent-wue-c208="" id="myIframe" frameborder="0" width="100%" height="99%" class="thread-content spaceTop" src="https://jetfair.io/lobby?SportId=1&amp;Token=cjzihkvhzSh%2foyugtAwbq3Plq6T0htN3PzFpqw4ci84nrq%2f6XUGB88EkGa%2f6QHAVurzSDYhE8Mk%3d"></iframe>
+    </body>
+    <footer>
+        <div _ngcontent-rgs-c158="" class="ng-tns-c158-1 ng-star-inserted">
+          <div _ngcontent-rgs-c158="" class="footerDiv d-flex justify-content-center mt-md-2 mt-2 mb-sm-0 ng-tns-c158-1">
+            <app-footer-tutorials _ngcontent-rgs-c158="" style="width: 100% !important;" class="ng-tns-c158-1" _nghost-rgs-c155="">
+              <div _ngcontent-rgs-c155="" class="row">
+                <h1 _ngcontent-rgs-c155="" class="tutorial-heading"> Tutorials </h1>
+              </div><!----><!----><!---->
+              <div _ngcontent-rgs-c155="" class="row ng-star-inserted">
+                <div _ngcontent-rgs-c155="" class="col-md col-2 right special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to Signup? </button>
+                </div>
+                <div _ngcontent-rgs-c155="" class="col-md col-2 left special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to play in Kheloyar Exchange? </button>
+                </div>
+                <div _ngcontent-rgs-c155="" class="col-md col-2 right special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to Play in ID Wallet? </button>
+                </div>
+                <div _ngcontent-rgs-c155="" class="col-md col-2 left special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to Withdraw?</button>
+                </div>
+                <div _ngcontent-rgs-c155="" class="col-md col-2 left special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to Deposit? </button>
+                </div>
+                <div _ngcontent-rgs-c155="" class="col-md col-2 left special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to play in Casino? </button>
+                </div>
+                <div _ngcontent-rgs-c155="" class="col-md col-2 left special_border">
+                  <button _ngcontent-rgs-c155="" aria-expanded="false" class="btns"> How to reset your ID password? </button>
+                </div>
+              </div><!---->
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+              <app-dialogue-modal-tutorials _ngcontent-rgs-c155="" _nghost-rgs-c153=""><!----><!----></app-dialogue-modal-tutorials>
+            </app-footer-tutorials>
+          </div>
+          <div _ngcontent-rgs-c158="" class="footerDiv d-flex justify-content-center mt-md-2 mt-2 mb-sm-0 margin-bottom-sm ng-tns-c158-1">
+            <app-footer _ngcontent-rgs-c158="" style="width: 100% !important;" class="ng-tns-c158-1" _nghost-rgs-c107="">
+              <div _ngcontent-rgs-c107="">
+                <div _ngcontent-rgs-c107="" class="footer-wrapper">
+                  <div _ngcontent-rgs-c107="" class="justify-content-center gap-5 logo-section d-flex">
+                    <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/logos/logo-row.svg" class="logo-img">
+                    <a _ngcontent-rgs-c107="" target="_blank" href="https://drive.google.com/file/d/16ebmT-E2QJ2z_MWLdkiO2AJ6ypVoUOmy/view?usp=sharing">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/download-app.svg" class="logo-img">
+                    </a>
+                  </div><!---->
+                  <div _ngcontent-rgs-c107="" class="payment-options mt-4 ng-star-inserted">
+                    <div _ngcontent-rgs-c107="" class="row">
+                      <div _ngcontent-rgs-c107="" class="col-2">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/upi-footer.svg" class="footer-options-img">
+                      </div>
+                      <div _ngcontent-rgs-c107="" class="col-2">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/paytm-footer.svg" class="footer-options-img">
+                      </div>
+                      <div _ngcontent-rgs-c107="" class="col-2">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/GPay-footer.svg" class="footer-options-img">
+                      </div>
+                      <div _ngcontent-rgs-c107="" class="col-2">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/phonepe-footer.svg" class="footer-options-img">
+                      </div>
+                      <div _ngcontent-rgs-c107="" class="col-2">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/Bank-footer.svg" class="footer-options-img">
+                      </div>
+                      <div _ngcontent-rgs-c107="" class="col-2">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/gamble-footer.svg" class="footer-options-img">
+                      </div>
+                    </div>
+                  </div><!---->
+                  <div _ngcontent-rgs-c107="" class="project-description mt-3">
+                    <p _ngcontent-rgs-c107="" class="description-text text-center"> Kheloyar.club is a product of Kheloyar Group which operates in accordance with the License granted by SVG Gambling Commission under the license </p>
+                  </div>
+                  <div _ngcontent-rgs-c107="" class="copyright-section">
+                    <p _ngcontent-rgs-c107="" class="copyright-text text-center"> © 2023 Kheloyar. All rights reserved. </p>
+                  </div>
+                  <div _ngcontent-rgs-c107="" class="footer-terms-section">
+                    <app-footer-menu _ngcontent-rgs-c107="" _nghost-rgs-c106="">
+                      <div _ngcontent-rgs-c106="" class="row">
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 right">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/betting-rules" href="/betting-rules"> Betting Rules </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 right">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/privacy" href="/privacy"> Privacy Policy </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 right">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/about-us" href="/about-us"> About us </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 left">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/terms" href="/terms"> Terms&amp;Conditions </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 left">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/faqs" href="/faqs"> FAQ's </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 left">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/cookie" href="/cookie"> Cookie Policy </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 left">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/tutorials" href="/tutorials"> Tutorials </a>
+                        </div>
+                        <div _ngcontent-rgs-c106="" class="col-md col-sm-6 col-6 left">
+                          <a _ngcontent-rgs-c106="" d="" aria-expanded="false" routerlink="/explore" href="/explore"> Explore More </a>
+                        </div>
+                      </div>
+                    </app-footer-menu>
+                  </div>
+                  <hr _ngcontent-rgs-c107="">
+                  <div _ngcontent-rgs-c107="" class="customer-support-section d-flex flex-row gap-5 mt-4 mb-4 align-content-center align-items-center justify-content-center">
+                    <div _ngcontent-rgs-c107="" class="first-portion">
+                      <span _ngcontent-rgs-c107="" class="title-text"> 24/7 Customer Support </span>
+                    </div>
+                    <div _ngcontent-rgs-c107="" class="d-flex flex-row gap-2 align-items-center second-portion">
+                      <div _ngcontent-rgs-c107="" class="icon">
+                        <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/support.svg" class="support-icon">
+                      </div>
+                      <div _ngcontent-rgs-c107="" class="lang-text d-flex flex-column">
+                        <span _ngcontent-rgs-c107="" class="text">हिन्दी : 
+                          <a _ngcontent-rgs-c107="" target="_blank" class="footer-link-text" href="https://wa.me/917046888888?text=Hi , I need Details About Kheloyar Club">यहां क्लिक करें</a>
+                        </span>
+                        <span _ngcontent-rgs-c107="" class="text">English : 
+                          <a _ngcontent-rgs-c107="" target="_blank" class="footer-link-text" href="https://wa.me/917046888888?text=Hi , I need Details About Kheloyar Club">Click Here</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div _ngcontent-rgs-c107="" class="social-media-section justify-content-center gap-3">
+                    <a _ngcontent-rgs-c107="" href="https://www.facebook.com/kheloyar.official">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/facebook-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="https://www.instagram.com/kheloyar_club_net/">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/instagram-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="#">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/telegram-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="https://twitter.com/KHELOYAR_CLUB">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/twitter-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="https://www.youtube.com/channel/UCC-hnRPCNylFw8usx32y8sQ">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/youtube-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="https://www.snapchat.com/add/kheloyar55?share_id=0oPTPNWWP7U&amp;locale=en-GB">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/snapchat-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="https://sharechat.com/profile/kheloyar">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/social-1-icon.svg" class="social-icons">
+                    </a>
+                    <a _ngcontent-rgs-c107="" href="https://mojapp.in/@kheloyar?referrer=iOS&amp;h=TeKMc8p-1dr3Ver">
+                      <img _ngcontent-rgs-c107="" src="https://ncdn.kheloyaar.club/assets/images/newUiAssets/footer/socialMedia/social-2-icon.svg" class="social-icons">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </app-footer>
+          </div>
+        </div>
+    </footer>
+        <!-- main js -->
+        <script src="js/cricket.js"></script>
+    
+        <!-- bootstap js -->
+        <script src="./vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+</html>
